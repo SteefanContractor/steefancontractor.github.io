@@ -1,0 +1,46 @@
+
+[light]
+    # Theme metadata
+    name = "custom"
+
+    # Is theme light or dark?
+    light = true
+
+    # Primary
+    primary =  "#EF525B" #"#795548"
+    primary_light = "#a98274"
+    primary_dark = "#4b2c20"
+
+    # Menu
+    menu_primary = "#264E70" #"#7570b3" #"#795548"
+    menu_text = "rgba(255,255,255,0.6)"
+    menu_text_active = "#EF525B" #"rgba(255,255,255,1)"
+    menu_title = "#fff"
+
+    # Backgrounds 
+    background = "#f5f5f5" #"#eee8dd"
+    home_section_odd = "＃FFB4AC" 
+    home_section_even = "＃FFEBD3"  #"hsla(16, 24%, 80%, 1)"
+
+[dark]
+    # Theme metadata
+    name = "custom"
+
+    # Is theme light or dark?
+    light = false
+
+    # Primary
+    primary =  "#EF525B" #"#795548"
+    primary_light = "#a98274"
+    primary_dark = "#4b2c20"
+
+    # Menu
+    menu_primary = "#666" #"#7570b3" #"#795548"
+    menu_text = "rgba(255,255,255,0.6)"
+    menu_text_active = "#EF525B" #"rgba(255,255,255,1)"
+    menu_title = "#fff"
+
+    # Backgrounds
+    background = "#f5f5f5" #"#eee8dd"
+    home_section_odd = "#f5f5f5" 
+    home_section_even = "#ededed"  #"hsla(16, 24%, 80%, 1)"

@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Alice Wu 吳恩達
+title: Steefan Contractor
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: Steefan
+last_name: Contractor
 
 # Status emoji
 status:
@@ -14,34 +14,36 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Post-doctoral Research Associate (Research Data Scientist)
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: UNSW Data Science Hub, School of Mathematics and Statistics, The Univesrsity of New South Wales
+    url: https://www.unsw.edu.au/research/udash
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Generative Artificial Intelligence
+  - AI and Computer Vision Applications in Climate Sciences and Remote Sensing
+  - Bayesian Modeling with Stochastic Variational Inference
+  - Spatiotemporal Modeling and Timeseries Forecasting
+  - Quantum Machine Learning
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
+    - course: PhD in Climate Science
+      institution: Climate Change Research Centre, The University of New South Wales
+      year: 2019
+    - course: Honours in Physics
+      institution: ARC Centre of Excellence for Quantum Computation and Communication Technology, The University of New South Wales
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: BSc (Adv.) in Physics
+      institution: School of Physics, The University of New South Wales
+      year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -53,32 +55,37 @@ social:
     link: '/#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: https://twitter.com/stefancontracto
     label: Follow me on Twitter
     display:
       header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  - icon: google-scholar #graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+    icon_pack: ai
+    link: https://scholar.google.co.uk/citations?user=sEnHZ3AAAAAJ&hl=en
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/steefancontractor
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/steefan-contractor-b375bb209/
+  - icon: mastodon
+    icon_pack: fab
+    link: https://mastodon.au/@stefancontracto
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'stefan.contractor@gmail.com'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a research data scientist with a doctorate in climate science and nearly five years of post-doctorate experience as a trans-disciplinary statistical and deep learning consultant at the University of New South Wales (UNSW). I have experience with statistical modeling, computer vision, and AI applications in the fields of climate science and remote sensing, and also natural language processing of large texts in law  and politics. I also like to make complex concepts simple by creating interactive dashboards. Refer to my list of featured projects for more details. 
+
+In my spare time I like to ride bicycles, climb rocks and ferment food and drinks. 
 {style="text-align: justify;"}
