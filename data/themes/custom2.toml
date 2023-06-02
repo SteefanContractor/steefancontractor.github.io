@@ -21,22 +21,3 @@ name = "Custom Theme"
   home_section_even = "#FFCBC6" #"#FFB4AC"
   text_home_section_odd = "#000"
   text_home_section_even = "#FFF"
-
-[dark]
-  # Primary
-  primary = "#679186"
-
-  # Links
-  link = "#264E70"
-  link_hover = "#679186"
-
-  # Menu
-  menu_primary = "#264E70"
-  menu_text = "#FFEBD3"
-  menu_text_active = "#FFB4AC"
-  menu_title = "#FFB4AC"
-
-  # Home sections
-  background = "#679186"
-  home_section_odd = "#FFCBC6"
-  home_section_even = "#FFCBC6" #"#FFCBC6"

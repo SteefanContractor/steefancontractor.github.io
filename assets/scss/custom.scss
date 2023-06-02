@@ -3,10 +3,10 @@
     // background-color: #FFEBD3;
 }
 
-.home-section:nth-of-type(even) {
-    color: #FFF;
-    // background-color: #FFCBC6
-}
+// .home-section:nth-of-type(even) {
+//     color: #FFF;
+//     // background-color: #FFCBC6
+// }
 
 #profile .portrait-title h2 {
     color: #679186
@@ -16,6 +16,14 @@
     color: #679186
 }
 
-.home-section:nth-of-type(odd) li {
-    color: #000;
+// .home-section:nth-of-type(odd) li {
+//     color: #000;
+// }
+
+.page-body {
+    background: #FFEBD3;
+}
+
+.page-body h1 {
+    color: #e83e8c
 }
