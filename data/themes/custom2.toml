@@ -18,6 +18,6 @@ name = "Custom Theme"
   # Home sections
   background = "#679186"
   home_section_odd = "#FFEBD3"
-  home_section_even = "#FFCBC6" #"#FFB4AC"
+  home_section_even = "#FFE2D4" #"#FFCBC6" #"#FFB4AC"
   text_home_section_odd = "#000"
   text_home_section_even = "#FFF"
