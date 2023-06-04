@@ -161,7 +161,7 @@ sections:
   - block: portfolio
     id: projects
     content:
-      text: Coming soon!
+      # text: Coming soon!
       title: Projects
       filters:
         folders:
@@ -173,13 +173,17 @@ sections:
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
-      # buttons:
-      #   - name: All
-      #     tag: '*'
-      #   - name: Deep Learning
-      #     tag: Deep Learning
-      #   - name: Other
-      #     tag: Demo
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Deep Learning
+          tag: deep learning
+        - name: Natural Language Processing
+          tag: natural language processing
+        - name: Computer Vission
+          tag: computer vision
+        - name: Data Visualization
+          tag: data visualization
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
