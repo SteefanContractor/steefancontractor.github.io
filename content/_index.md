@@ -180,7 +180,7 @@ sections:
           tag: deep learning
         - name: Natural Language Processing
           tag: natural language processing
-        - name: Computer Vission
+        - name: Computer Vision
           tag: computer vision
         - name: Data Visualization
           tag: data visualization
