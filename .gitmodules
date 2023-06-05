@@ -1,0 +1,3 @@
+[submodule "/Users/Stefan/Documents/GIT_REPOS/my_website/public"]
+	path = /Users/Stefan/Documents/GIT_REPOS/my_website/public
+	url = git@github.com:SteefanContractor/SteefanContractor.github.io.git
