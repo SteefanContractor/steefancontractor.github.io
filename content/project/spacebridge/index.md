@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "UK/Aus Space Bridge"
-summary: "A novel application of passive GPS signals (GNSS-R) picked up by cube satellites to detect the location and age of Antarctic sea ice. We conducted an intercomparison of explainable machine learning and deep learning (tabnet) algorithms to understand which GNSS-R variables are used by the models with the highest ice detection skill. In collaboration with Spire Global, thanks to the UK-Australia Spacebridge grant organised by SmartSat CRC."
+summary: "A novel application of passive GPS signals (GNSS-R) picked up by cube satellites to detect the location and age of Antarctic sea ice. We conducted an intercomparison of explainable machine learning and deep learning ([tabnet](https://arxiv.org/abs/1908.07442)) algorithms to understand which GNSS-R variables are used by the models with the highest ice detection skill. In collaboration with [Spire Global](https://spire.com/), thanks to the UK-Australia Spacebridge grant organised by [SmartSat CRC](https://smartsatcrc.com/)."
 authors: [Steefan Contractor, Shane Keating, Jessica Cartwright, Alex ]
 tags: [machine learning, deep learning, tabular data, remote sensing, classification]
 categories: [artificial intelligence]

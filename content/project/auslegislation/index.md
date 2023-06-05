@@ -2,7 +2,9 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Australian Legislation Amendment Frequency"
-summary: "An analysis of the frequency of amendments of the twenty largest Federal legislative bills since their inception. This project involved the automated acquisition of the documents and natural language processing of nearly twelve gigabytes of text data. The project was led by A/Prof Lisa Crawford of the School of Law, UNSW."
+summary: "An analysis of the frequency of amendments of the twenty largest Federal legislative bills since their inception. This project involved the automated acquisition of the documents and natural language processing of nearly twelve gigabytes of text data. The project was led by [A/Prof Lisa Crawford](https://www.sydney.edu.au/law/about/our-people/academic-staff/l-crawford.html) of the Law School, University of Sydney.
+
+\nPhoto by [Tingey Injury Law Firm](https://unsplash.com/fr/@tingeyinjurylawfirm) on [Unsplash](https://unsplash.com/photos/veNb0DDegzEUnsplash)"
 authors: [Elma Ekand, Steefan Contractor, Lisa Crawford, Scott Sisson]
 tags: [natural language processing]
 categories: []

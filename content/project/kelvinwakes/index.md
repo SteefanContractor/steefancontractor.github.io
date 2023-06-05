@@ -2,7 +2,9 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Kelvin Wake Detection"
-summary: "We use fluid dynamics to simulate realistic images of the ocean surface with the triangular wave patterns behind moving objects (kelvin wakes) in water overlayed on wind generated waves. A deep learning (u-net) algorithm was trained to detect the presence absence of the kelvin wakes in the images. The prediction skill is further improved with the use of diffusion models to improve the signal to noise ratio between the kelvin wakes and the wind generated waves. This project was in collaboration with Naval Group Australia."
+summary: "We use fluid dynamics to simulate realistic images of the ocean surface with the triangular wave patterns behind moving objects (kelvin wakes) in water overlayed on wind generated waves. A deep learning (u-net) algorithm was trained to detect the presence absence of the kelvin wakes in the images. The prediction skill is further improved with the use of diffusion models to improve the signal to noise ratio between the kelvin wakes and the wind generated waves. This project was in collaboration with [Naval Group Australia](https://www.naval-group.com/en).
+
+\nPhoto by [Martin Adams](https://unsplash.com/@martinadams) on [Unsplash](https://unsplash.com/photos/c7GhlsVJv8U)"
 authors: [Steefan Contractor, Shane Keating]
 tags: [deep learning, image data, simulated data, classification]
 categories: [artificial intelligence]

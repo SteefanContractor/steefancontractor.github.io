@@ -2,7 +2,9 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Sea Ice Segmentation"
-summary: "We use deep learning and computer vision to detect individual ice floes in aerial imagery with the aim to understand the frequency distribution of sea ice by their area."
+summary: "We use deep learning and computer vision to detect individual ice floes in aerial imagery with the aim to understand the frequency distribution of sea ice by their area. 
+
+\nPhoto by [Cassie Matias](https://unsplash.com/fr/@cass4504) on [Unsplash](https://unsplash.com/photos/Wgjlk0Lo7-A)"
 authors: []
 tags: [computer vision]
 categories: []
@@ -15,7 +17,7 @@ external_link: ""
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
+  caption: "Photo by [Cassie Matias](https://unsplash.com/fr/@cass4504) on [Unsplash](https://unsplash.com/photos/Wgjlk0Lo7-A)"
   focal_point: ""
   preview_only: false
 

@@ -2,7 +2,9 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Open Politics"
-summary: "Leveraging large language models (BERT) for natural language processing of social media posts by Australian MPs to detect corruption. In collaboration with Sean Johnson of [Openpolitics](https://openpolitics.au/)."
+summary: "Leveraging large language models (BERT) for natural language processing of social media posts by Australian MPs to detect corruption. In collaboration with Sean Johnson of [Openpolitics](https://openpolitics.au/).
+
+\nPhoto by [Aditya Joshi](https://unsplash.com/@adijoshi11) on [Unsplash](https://unsplash.com/photos/7FW5-3vVRSw)"
 authors: []
 tags: [natural language processing]
 categories: []
