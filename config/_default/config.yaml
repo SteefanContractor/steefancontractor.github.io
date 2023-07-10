@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Steefan Contractor # Website name
-baseURL: 'https://SteefanContractor.github.io' # Website URL
+baseURL: 'https://SteefanContractor.github.io/my_website' # Website URL
 
 ############################
 ## LANGUAGE
