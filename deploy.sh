@@ -16,6 +16,9 @@ cd public
 # Checkout the correct branch
 git checkout June2023_update
 
+# do a git pull
+git pull
+
 # Add changes to git.
 git add .
 
