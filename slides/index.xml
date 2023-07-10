@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides | Steefan Contractor</title><link>https://SteefanContractor.github.io/my_website/slides/</link><atom:link href="https://SteefanContractor.github.io/my_website/slides/index.xml" rel="self" type="application/rss+xml"/><description>Slides</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Jul 2023 23:47:42 +1000</lastBuildDate><item><title>GPCC_colloquium_2023</title><link>https://SteefanContractor.github.io/my_website/slides/gpcc_colloquium_2023/</link><pubDate>Fri, 07 Jul 2023 23:47:42 +1000</pubDate><guid>https://SteefanContractor.github.io/my_website/slides/gpcc_colloquium_2023/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+&lt;h2 id="rainfall-estimates-on-a-gridded-network-regen">Rainfall Estimates on a Gridded Network (REGEN)&lt;/h2>
+&lt;p>Steefan Contractor&lt;/p>
+&lt;br/>
+&lt;div class="citation"">Contractor, S., Donat, M. G., Alexander, L. V., Ziese, M., Meyer-Christoffer, A., Schneider, U., Rustemeier, E., Becker, A., Durre, I., and Vose, R. S.: Rainfall Estimates on a Gridded Network (REGEN) – a global land-based gridded dataset of daily precipitation from 1950 to 2016, Hydrol. Earth Syst. Sci., 24, 919–943&lt;div>
+&lt;hr>
+&lt;h1 id="basic-description">Basic description&lt;/h1>
+&lt;ul>
+&lt;li>Daily estimates over 1950 - 2016&lt;/li>
+&lt;li>Gridded 1 degree latitude x 1 degree longitude resolution&lt;/li>
+&lt;li>Global land coverage&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;ul>
+&lt;li>Purpose built for climate studies with a long temporal record and consistent global spatial analysis&lt;/li>
+&lt;li>Based on a large in situ archive from combining GPCC with GHCN-Daily among others&lt;/li>
+&lt;li>Includes various statistical model error estimates&lt;/li>
+&lt;li>Also includes guidance for users less aware of issues with in situ based precipitation observations&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="in-situ-station-archive-description">In Situ Station Archive Description&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col2">
+&lt;br/>&lt;br/>
+&lt;ul>
+&lt;li>Total stations: 135,178&lt;/li>
+&lt;li>Around 50K stations for each day&lt;/li>
+&lt;li>Min stations per day: 35,460&lt;/li>
+&lt;li>Max stations per day: 56,190&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col3">
+&lt;img src="img/num_stations_by_source.jpg" width="300px">
+&lt;img src="img/station_locations.jpg">
+&lt;/div>
+&lt;hr>
+&lt;h1 id="component-in-situ-archives">Component In Situ Archives&lt;/h1>
+&lt;div class="multi-column" style="font-size: 60%;">
+&lt;div class="col1">
+&lt;h5 id="three-sources">Three sources:&lt;/h5>
+&lt;ul>
+&lt;li>GPCC stations&lt;/li>
+&lt;li>GHCN-Daily stations&lt;/li>
+&lt;li>Collected during GEWEX workshops&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col1">
+&lt;h5 id="merging-algorithm">Merging algorithm:&lt;/h5>
+&lt;ul>
+&lt;li>Lat + Lon match and&lt;/li>
+&lt;li>World Met. Org. (WMO) ID match or missing&lt;/li>
+&lt;/ul>
+&lt;p>Or&lt;/p>
+&lt;ul>
+&lt;li>Coordinates within 1º of each other and&lt;/li>
+&lt;li>WMO ID match or missing and&lt;/li>
+&lt;li>0.99 correlation between timeseries with 365 days of data of which at least 10d with &amp;gt;1mm precip&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;hr>
+&lt;div style="font-size:70%">
+&lt;h1 id="quality-control-procedures">Quality Control Procedures&lt;/h1>
+&lt;ul>
+&lt;li>The automated QC procedures were identical to those applied to GHCN-Daily (Durre et al. 2010)&lt;/li>
+&lt;li>The procedure included two stages&lt;/li>
+&lt;li>Stage 1 does temporal checks
+&lt;ul>
+&lt;li>multi-day accumulations&lt;/li>
+&lt;li>duplicate data within timeseries&lt;/li>
+&lt;li>frequent occurance of values&lt;/li>
+&lt;li>world record exceedances&lt;/li>
+&lt;li>outlier checks&lt;/li>
+&lt;li>temporal consistency checks&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Stage 2 does spatial checks
+&lt;ul>
+&lt;li>checks whether values are consistent with negihbours&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;br/>
+&lt;div class="citation">Durre, I., Menne, M. J., Gleason, B. E., Houston, T. G., and Vose, R. S.: Comprehensive automated quality assurance of daily sur- face observations, J. Appl. Meteorol. Clim., 49, 1615–1633&lt;/div>
+&lt;hr>
+&lt;div style="font-size: 50%;">
+&lt;h1 id="interpolation-algorithm">Interpolation Algorithm&lt;/h1>
+&lt;ul>
+&lt;li>Ordinary Block Kirging&lt;/li>
+&lt;li>Best Linear Unbiassed Estimator (BLUE)&lt;/li>
+&lt;li>Linear because the estimate is a weighted average of surrounding stations&lt;/li>
+&lt;/ul>
+&lt;p>$$\mathbf{Z}^*(s_0) = \sum_{i=0}^{N} λ_i\mathbf{Z}(S_i)$$&lt;/p>
+&lt;ul>
+&lt;li>Best because we use the spatial structure (covariance) to determine the value of the weights&lt;/li>
+&lt;li>Unbiassed because the weights are constrained to add up to 1 and so the result cannot be biassed to any one station&lt;/li>
+&lt;/ul>
+&lt;p>$$\sum_{i=1}^N λ = 1$$&lt;/p>
+&lt;ul>
+&lt;li>Ordinary Kriging assumes second order stationarity (mean and variance constant across domain)&lt;/li>
+&lt;/ul>
+&lt;p>$$\mathbf{Z}^*(s_0) = μ + ε(s_0)$$&lt;/p>
+&lt;ul>
+&lt;li>Block implies that the algorithm produces gridded area-average estimates as opposed to point estimates&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="two-flavours-all-stations-and-long-term-stations-only">Two Flavours: All stations and Long Term Stations Only&lt;/h1>
+&lt;ul>
+&lt;li>The All stations based dataset interpolates all underlying stations&lt;/li>
+&lt;li>The Long Term version interpolates only stations with 40 complete years of data&lt;/li>
+&lt;li>A year is complete if all 12 months had at least 70% non-missing days&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="uncertainty-aware-guidance-for-users">Uncertainty aware guidance for users&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1" style="font-size: 90%">
+&lt;br/>
+&lt;ul>
+&lt;li>The uncertainty info includes Kriging Error (KE): a weighted average of modeled variance (between interpolation location and stations) and depends solely on the spatial distribution of stations and grid size, and&lt;/li>
+&lt;li>Yamamoto coefficient of variation (CV) (Yamamoto et al. 2000): weighted (by Kriging weights) average error between the estimate and the station values&lt;/li>
+&lt;li>Number of stations used for each grid estimate is also included&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="img/REGEN_AvgKriginError.jpg" width=90%>
+&lt;img src="img/REGEN_CV.jpg" width=90%>
+&lt;/div>
+&lt;/div>
+&lt;div class="citation">Yamamoto, J. K.: An Alternative Measure of the Reliability of Ordinary Kriging Estimates, Math. Geol., 32, 489–509&lt;/div>
+&lt;hr>
+&lt;h1 id="quality-masks">Quality Masks&lt;/h1>
+&lt;p style="text-align: left;">A grid cell was left unmasked if:
+&lt;ul>
+&lt;li>It contained 60% of days in every decade with at least 1 station, and&lt;/li>
+&lt;li>both the KE and CV were under the 95th percentile (spatial distribution) of the temporally averaged (over 1950 - 2016) KE and CV respectively&lt;/li>
+&lt;/ul>
+&lt;img src="img/REGEN_REGEN40_qualitymasks.jpg">
+&lt;hr>
+&lt;h1 id="comparison-with-other-global-gridded-datasets-of-monthly-precipitation">Comparison with other global gridded datasets of monthly precipitation&lt;/h1>
+&lt;img src="img/AnnualPrcpTotAnomalyTS_REGEN_GPCC_GHCN_CRU.png" width=80%>
+&lt;hr>
+&lt;h1 id="comparison-with-other-global-gridded-datasets-of-daily-precipitation">Comparison with other global gridded datasets of daily precipitation&lt;/h1>
+&lt;img src="img/REGENvsGPCCFDDandCPC.jpg" width=75%>
+&lt;hr>
+&lt;div class="top">
+&lt;h1 id="comparison-with-regional-daily-precipitation-datasets">Comparison with regional daily precipitation datasets&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;p>Mean difference&lt;/p>
+&lt;/div>
+&lt;div class="col1">
+&lt;p>SD of difference&lt;/p>
+&lt;/div>
+&lt;div class="col1">
+&lt;p>Temporal correlation&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div id="imgfrag">
+&lt;span class="fragment " >
+&lt;img src="img/REGENvsCPCCONUS.jpg">
+&lt;/span>
+&lt;span class="fragment " >
+&lt;img src="img/REGENvsEOBS.jpg">
+&lt;/span>
+&lt;span class="fragment " >
+&lt;img src="img/REGENvsAWAP.jpg">
+&lt;/span>
+&lt;span class="fragment " >
+&lt;img src="img/REGENvsAPHRODITE.jpg">
+&lt;/span>
+&lt;span class="fragment " >
+&lt;img src="img/REGENvsSAOBS.jpg">
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="application-global-changes-in-precipitation">Application: Global changes in precipitation&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;p>Trends in annual precipitation (1950 - 2016) (mm/yr)&lt;/p>
+&lt;img src="img/trends.jpg" width=100%>
+&lt;div class="citation">Contractor, S., Donat, M. G., &amp; Alexander, L. V. (2021). Changes in Observed Daily Precipitation over Global Land Areas since 1950. Journal of Climate, 34(1), 3–19.&lt;/div>
+&lt;/div>
+&lt;div class="col1">
+&lt;p style="font-size: 50%">Wet-day frequency changes between 1950-1983 and 1984-2016 (%)
+&lt;img src="img/frequency_changes.jpg" width=80%>
+&lt;p style="font-size: 50%">Mean precipitation intensity changes between 1950-1983 and 1984-2016 (%)
+&lt;img src="img/intensity_changes.jpg" width=80%>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="changes-across-the-precipitation-distribution-between-1950-1983-and-1984-2016">Changes across the precipitation distribution between 1950-1983 and 1984-2016&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;ul>
+&lt;li>Spatially, changes in precipitation seem complex, even stochastic at first&lt;/li>
+&lt;li>But a clear signal of positive precipitation changes in the high quantiles consitent with thermodynamic expectations is apparent&lt;/li>
+&lt;li>This signal dissappears for the most extreme precipitation again&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col1">
+&lt;p style="font-size: 50%">Relative difference in area showing postive changes vs area showing negative changes
+&lt;img src="img/distribution_changes.jpg">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="synchronous-changes-between-frequency-and-intensity">Synchronous changes between frequency and intensity&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;ul>
+&lt;li>Mean changes in frequency and intensity are aligned in only around 1/3&lt;sup>rd&lt;/sup> of the grids&lt;/li>
+&lt;li>Extreme changes in frequency and intensity are aligned in almost 80% of areas globally&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="img/freqchanges_vs_intchanges.jpg">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="my-ideal-future-of-climate-datasets">(My ideal) Future of climate datasets&lt;/h1>
+&lt;div style="font-size:80%">
+&lt;ul>
+&lt;li>All &amp;ldquo;observational&amp;rdquo; datasets are estimates from a statistical model consisting of alleatoric and epistemic uncertainties&lt;/li>
+&lt;li>If we stop thinking of observations as immutable facts and instead think of them as data generating models than we can ask more meaningful questions&lt;/li>
+&lt;li>E.g. for validation studies, instead of doing a grid cell by grid cell comparison we can calculate the conditional probability of the model output given the observations&lt;/li>
+&lt;li>To do this we need observations to be inherently probabilistic (the entire distribution), e.g. Risser et al. 2019&lt;/li>
+&lt;li>Artificial intelligence assisted inference can alleviate computational bottlenecks that traditionally made inference algorithms impractical in climate sciences, e.g. Zammit-Mangion et. al 2021 and Lenzi et. al 2023&lt;/li>
+&lt;li>As the examples demonstrate even a dataset of extremes is possible with this approach&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;br/>
+&lt;div class="citation">Risser, M. D., Paciorek, C. J., Wehner, M. F., O’Brien, T. A., &amp; Collins, W. D. (2019). A probabilistic gridded product for daily precipitation extremes over the United States. Climate Dynamics, 53(5), 2517–2538.&lt;/div>
+&lt;div class="citation">Zammit-Mangion, A., Ng, T. L. J., Vu, Q., &amp; Filippone, M. (2021). Deep Compositional Spatial Models. Journal of the American Statistical Association, 0(0), 1–47.&lt;/div>
+&lt;div class="citation">Lenzi, A., Bessac, J., Rudi, J., &amp; Stein, M. L. (2023). Neural networks for parameter estimation in intractable models. Computational Statistics &amp; Data Analysis, 185, 107762.&lt;/div>
+&lt;hr>
+&lt;h1 id="thank-you">Thank you&lt;/h1>
+&lt;img style="border-radius:50%" src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250">
+&lt;br/>
+&lt;a href="mailto:s.contractor@unsw.edu.au" aria-label="envelope">
+&lt;i class="fas fa-envelope big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://twitter.com/stefancontracto" target="_blank" rel="noopener" aria-label="twitter">
+&lt;i class="fab fa-twitter big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://scholar.google.co.uk/citations?user=sEnHZ3AAAAAJ" target="_blank" rel="noopener" aria-label="google-scholar">
+&lt;i class="ai ai-google-scholar big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://github.com/steefancontractor" target="_blank" rel="noopener" aria-label="github">
+&lt;i class="fab fa-github big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://www.linkedin.com/in/steefan-contractor-b375bb209/" target="_blank" rel="noopener" aria-label="linkedin">
+&lt;i class="fab fa-linkedin big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://mastodon.au/@stefancontracto" target="_blank" rel="noopener" aria-label="mastodon">
+&lt;i class="fab fa-mastodon big-icon">&lt;/i>
+&lt;/a></description></item></channel></rss>
