@@ -360,7 +360,7 @@ Trends in annual precipitation (1950 - 2016) (mm/yr)
 
 <div style="font-size:80%">
 
-- All "observational" datasets are estimates from a statistical model consisting of alleatoric and epistemic uncertainties
+- All "observational" datasets are estimates from a statistical model consisting of aleatoric and epistemic uncertainties
 - If we stop thinking of observations as immutable facts and instead think of them as data generating models than we can ask more meaningful questions
 - E.g. for validation studies, instead of doing a grid cell by grid cell comparison we can calculate the conditional probability of the model output given the observations
 - To do this we need observations to be inherently probabilistic (the entire distribution), e.g. Risser et al. 2019
