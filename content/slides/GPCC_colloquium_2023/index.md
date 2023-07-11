@@ -42,6 +42,23 @@ slides:
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+<div class="vert-banner">
+  
+  <img src="img/UNSW_logo-portrait-light_transparent.png">
+  <img src="img/Udash logo CMYK revised-03.png">
+
+</div>
+
+<script>
+  function add_vert_banner() {
+    let vertbanner = document.querySelector("div.vert-banner");
+    let reveal = document.querySelector(".reveal");
+    reveal.insertBefore(vertbanner, reveal.firstChild);
+  }
+  
+  window.onload = add_vert_banner();
+</script>
+
 ## Rainfall Estimates on a Gridded Network (REGEN)
 
 Steefan Contractor
