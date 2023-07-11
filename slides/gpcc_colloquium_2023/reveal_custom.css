@@ -24,6 +24,15 @@
 	margin: 5px 5px;
 }*/
 
+.reveal .vert-banner {
+	background-color: rgba(255,230,0,1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 7%;
+	height: 100vh;
+}
+
 .reveal p .MathJax_Display { font-size: 0.7em; }
 .reveal p { font-size: 0.7em; }
 .reveal h1 { font-size: 1.2em; text-transform: capitalize; }

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steefan Contractor</title><link>https://SteefanContractor.github.io/</link><atom:link href="https://SteefanContractor.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Steefan Contractor</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://SteefanContractor.github.io/media/icon_hu4d574013bb10331a675ee8ec27a93153_23560_512x512_fill_lanczos_center_3.png</url><title>Steefan Contractor</title><link>https://SteefanContractor.github.io/</link></image><item><title>GPCC_colloquium_2023</title><link>https://SteefanContractor.github.io/slides/gpcc_colloquium_2023/</link><pubDate>Fri, 07 Jul 2023 23:47:42 +1000</pubDate><guid>https://SteefanContractor.github.io/slides/gpcc_colloquium_2023/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+&lt;div class="vert-banner">
+&lt;img src="img/UNSW_logo-portrait-light_transparent.png">
+&lt;img src="img/Udash logo CMYK revised-03.png">
+&lt;/div>
+&lt;script>
+function add_vert_banner() {
+let vertbanner = document.querySelector("div.vert-banner");
+let reveal = document.querySelector(".reveal");
+reveal.insertBefore(vertbanner, reveal.firstChild);
+}
+window.onload = add_vert_banner();
+&lt;/script>
 &lt;h2 id="rainfall-estimates-on-a-gridded-network-regen">Rainfall Estimates on a Gridded Network (REGEN)&lt;/h2>
 &lt;p>Steefan Contractor&lt;/p>
 &lt;br/>
