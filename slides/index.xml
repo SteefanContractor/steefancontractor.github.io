@@ -1,4 +1,218 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides | Steefan Contractor</title><link>https://SteefanContractor.github.io/slides/</link><atom:link href="https://SteefanContractor.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><description>Slides</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 07 Jul 2023 23:47:42 +1000</lastBuildDate><item><title>GPCC_colloquium_2023</title><link>https://SteefanContractor.github.io/slides/gpcc_colloquium_2023/</link><pubDate>Fri, 07 Jul 2023 23:47:42 +1000</pubDate><guid>https://SteefanContractor.github.io/slides/gpcc_colloquium_2023/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides | Steefan Contractor</title><link>https://SteefanContractor.github.io/slides/</link><atom:link href="https://SteefanContractor.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><description>Slides</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Nov 2023 17:22:03 +1100</lastBuildDate><item><title>Intro</title><link>https://SteefanContractor.github.io/slides/year10-data-sci-workshop/intro/</link><pubDate>Fri, 17 Nov 2023 17:22:03 +1100</pubDate><guid>https://SteefanContractor.github.io/slides/year10-data-sci-workshop/intro/</guid><description>&lt;link rel="stylesheet" href="../reveal_custom.css">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+&lt;div class="vert-banner">
+&lt;img src="../img/UNSW_logo-portrait-light_transparent.png">
+&lt;img src="../img/Udash logo CMYK revised-03.png">
+&lt;/div>
+&lt;script>
+function add_vert_banner() {
+let vertbanner = document.querySelector("div.vert-banner");
+let reveal = document.querySelector(".reveal");
+reveal.insertBefore(vertbanner, reveal.firstChild);
+}
+window.onload = add_vert_banner();
+&lt;/script>
+&lt;!-- &lt;section data-background-image="https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif"
+data-background-opacity=0.1
+data-background-size=cover> -->
+&lt;h1 id="year-10-data-science-work-experience-week">Year 10 Data Science Work Experience Week&lt;/h1>
+&lt;p>Welcome!&lt;/p>
+&lt;!-- &lt;/section> -->
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1669574034940-27c886b6f5bb?q=80&amp;w=3540&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+data-background-opacity=0.3
+data-background-size=cover>
+&lt;!--
+&lt;section data-noprocess data-shortcode-slide
+data-background-image="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif"
+>
+-->
+&lt;h1 id="acknowledgement-of-country">Acknowledgement of country&lt;/h1>
+&lt;p>UNSW Kensington Campus is located on the unceded lands of the Bedigal people. We pay our respects to their Elders, past and present, as the Traditional Custodians of this land.&lt;/p>
+&lt;/section>
+&lt;hr>
+&lt;h1 id="health-and-safety-induction">Health and Safety Induction&lt;/h1>
+&lt;hr>
+&lt;iframe width="800" height="480" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"src="https://use.mazemap.com/embed.html#v=1&amp;config=unsw&amp;zlevel=8&amp;center=151.234564,-33.917832&amp;zoom=18&amp;campusid=111&amp;sharepoitype=poi&amp;sharepoi=295318&amp;utm_medium=iframe" style={{ border: '1px solid grey' }} allow="geolocation">&lt;/iframe>&lt;br/>&lt;small>&lt;a href="https://www.mazemap.com/">Map by MazeMap&lt;/a>&lt;/small>
+&lt;hr>
+&lt;h1 id="unsw-year-10-data-science-work-experience-week">UNSW Year 10 Data Science Work Experience Week&lt;/h1>
+&lt;h2 id="aim">Aim&lt;/h2>
+&lt;p>Learn the basic principles of data science. Exploratory data analysis, statistical modelling and visualisation.&lt;/p>
+&lt;h2 id="students-will">Students will&lt;/h2>
+&lt;ul>
+&lt;li>learn basic programming concepts&lt;/li>
+&lt;li>get hands-on experience in analysing real-world datasets&lt;/li>
+&lt;li>work in independent teams on data science projects&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="unsw-data-science-hub-udash">UNSW Data Science Hub (uDASH)&lt;/h1>
+&lt;p>An official UNSW Research Centre in the School of Mathematics &amp;amp; Statistics&lt;/p>
+&lt;ul>
+&lt;li>formally established in 2021&lt;/li>
+&lt;/ul>
+&lt;p>Aim&lt;/p>
+&lt;ul>
+&lt;li>Bring together UNSW&amp;rsquo;s full spectrum of data specialists to solve complex, real-world challenges, faced by governments and businesses&lt;/li>
+&lt;/ul>
+&lt;p>Data experts across UNSW&lt;/p>
+&lt;ul>
+&lt;li>100+ data experts across UNSW&amp;rsquo;s broad and diverse faculties (Science, Arts, Engineering, Medicine, Law, Business, and Aus. Defence Force Academy)&lt;/li>
+&lt;li>All experts researching cutting edge applications using data science tools&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="udash">uDASH&lt;/h1>
+&lt;p>Our expertise:&lt;/p>
+&lt;ul>
+&lt;li>Mathematics and Statistics&lt;/li>
+&lt;li>Machine Learning and Artificial Intelligence&lt;/li>
+&lt;li>Data Visualisation&lt;/li>
+&lt;li>Computational modelling and simulation&lt;/li>
+&lt;li>Non-linear dynamics and optimisation&lt;/li>
+&lt;li>Data privacy&lt;/li>
+&lt;li>Probablistic modelling&lt;/li>
+&lt;li>Risk quantification and management&lt;/li>
+&lt;li>Business, economics, and marketing&lt;/li>
+&lt;li>Spatial modelling&lt;/li>
+&lt;li>Big and complex data&lt;/li>
+&lt;li>Genomics and medical data&lt;/li>
+&lt;li>Ecological, environmental and climate data&lt;/li>
+&lt;li>Defence research&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="workshop-program">Workshop Program&lt;/h1>
+&lt;section>
+&lt;h1 id="morning-sessions-930am---1200pm">Morning sessions 9:30am - 12:00pm&lt;/h1>
+&lt;ul>
+&lt;li>Lecture style sessions 10:00am - 12:00pm&lt;/li>
+&lt;li>Special talks 9:30 - 10:00am&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="lunch-1200pm---130pm">Lunch 12:00pm - 1:30pm&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>Free time to explore, get food, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Optional but recommended fun activities&lt;/p>
+&lt;ul>
+&lt;li>School of Mathematics and Statistics outreach workshops (45min)&lt;/li>
+&lt;li>School of Computer Science VR lab tour (45min)&lt;/li>
+&lt;li>Datasoc campus tour (30min)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="afternoon-sessions-130pm---400pm">Afternoon sessions 1:30pm - 4:00pm&lt;/h1>
+&lt;ul>
+&lt;li>Independent project work&lt;/li>
+&lt;li>groups of 5-6 students&lt;/li>
+&lt;li>Goal: visualise patterns, postulate hypothesis, statistical analysis and discussion&lt;/li>
+&lt;li>Demonstrators and instructors will give advice and recommendations&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;section>
+&lt;h1 id="monday">Monday&lt;/h1>
+&lt;p>Morning session:&lt;/p>
+&lt;ul>
+&lt;li>Formalities&lt;/li>
+&lt;li>General introduction + logistics&lt;/li>
+&lt;li>Software + Intro to programming with R&lt;/li>
+&lt;/ul>
+&lt;p>Afternoon session:&lt;/p>
+&lt;ul>
+&lt;li>Intro to datasets&lt;/li>
+&lt;li>Project group selection&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="tuesday">Tuesday&lt;/h1>
+&lt;p>Morning session:&lt;/p>
+&lt;ul>
+&lt;li>Meet a data scientist
+&lt;ul>
+&lt;li>Laura McKemmish, School of Chemistry&lt;/li>
+&lt;li>Boris Beranger, School of Mathematics and Statistics + Allianz&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exploratory data analysis&lt;/li>
+&lt;/ul>
+&lt;p>Afternoon session:&lt;/p>
+&lt;ul>
+&lt;li>Afternoon session: Work on projects (data exploration)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="wednesday">Wednesday&lt;/h1>
+&lt;p>Morning session:&lt;/p>
+&lt;ul>
+&lt;li>Meet a data scientist
+&lt;ul>
+&lt;li>Peter Hartmann, Westpac Group&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Statistical Modelling&lt;/li>
+&lt;/ul>
+&lt;p>Afternoon session:&lt;/p>
+&lt;ul>
+&lt;li>Work on projects (statistical modelling)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="thursday">Thursday&lt;/h1>
+&lt;p>Morning session:&lt;/p>
+&lt;ul>
+&lt;li>Datasoc: who they are, how can they improve your student experience&lt;/li>
+&lt;li>Data visualisation&lt;/li>
+&lt;/ul>
+&lt;p>Afternoon session:&lt;/p>
+&lt;ul>
+&lt;li>Work on projects (visualising results and wrap up)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="friday">Friday&lt;/h1>
+&lt;ul>
+&lt;li>Presentations&lt;/li>
+&lt;li>Program wrap-up&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;h1 id="your-instructors">Your instructors&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;p>Dr. Steefan Contractor
+&lt;img src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250" height=200px>&lt;/p>
+&lt;p>Dr. Boris Beranger
+&lt;img src="https://research.unsw.edu.au/sites/default/files/styles/profile/public/images/profile/ID_picture.jpg?itok=dEOUHrcH" height=200px>&lt;/p>
+&lt;/div>
+&lt;div class="col1">
+&lt;p>Dr. Elma Akand
+&lt;img src="https://www.auspublaw.org/ba242e9/1540a640742a23be5/1632895910848/Farrah-Ahmed.jpg?format=original" height=200px>&lt;/p>
+&lt;p>Dr. Ryan Thompson
+&lt;img src="https://ryan-thompson.github.io/resources/photo.jpg" height=200px>&lt;/p>
+&lt;/div>
+&lt;div class="col1">
+&lt;p>Jose R. Ferrer
+&lt;img src="https://api.research.unsw.edu.au/sites/default/files/images/profile/JR_Ferrer_Paris.jpg" height=200px>&lt;/p>
+&lt;p>Dr. Peng Zhong
+&lt;img src="https://pangchung.github.io/images/profile.jpg" height=200px>&lt;/p>
+&lt;/div>
+&lt;div class="col1">
+Dr. Ziyang Lyu
+&lt;img src="https://research.unsw.edu.au/sites/default/files/styles/profile/public/images/profile/IMG_2294.JPG?itok=L2ykujSb" height=200px>
+&lt;p>Dr. Daniel Hewitt
+&lt;img src="https://www.unsw.edu.au/content/dam/images/photos/people/headshots/science/2023-01-hdr-student-profiles/2022-12_Daniel%20Hewitt.jpg" height=200px>&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="contacts-and-socials">Contacts and Socials&lt;/h1>
+&lt;a href="https://www.unsw.edu.au/research/udash">
+&lt;i class="fas fa-solid fa-home">&lt;/i>
+&lt;/a>
+&lt;a href="mailto:uDASH@unsw.edu.au" aria-label="envelope">
+&lt;i class="fas fa-envelope big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://twitter.com/uDASH_UNSW" target="_blank" rel="noopener" aria-label="twitter">
+&lt;i class="fab fa-twitter big-icon">&lt;/i>
+&lt;/a>
+&lt;p>For urgent matters find my &lt;i class="fas fa-solid fa-phone">&lt;/i> on &lt;i class="fab fa-brands fa-slack">&lt;/i> (Slack)&lt;/p></description></item><item><title>GPCC_colloquium_2023</title><link>https://SteefanContractor.github.io/slides/gpcc_colloquium_2023/</link><pubDate>Fri, 07 Jul 2023 23:47:42 +1000</pubDate><guid>https://SteefanContractor.github.io/slides/gpcc_colloquium_2023/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 &lt;div class="vert-banner">
 &lt;img src="img/UNSW_logo-portrait-light_transparent.png">
