@@ -87,7 +87,93 @@ UNSW Kensington Campus is located on the unceded lands of the Bedigal people. We
 
 ---
 
+<section data-background-image="https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?q=80&w=2754&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.4>
+
 # Health and Safety Induction
+
+- We are following the HS414 Visitors to UNSW Facilities Guideline 
+- Visitors will be met by the person organizing the visit 
+- Visitors need to be accompanied and supervised by UNSW staff members or teaching assistants 
+- Visitors are not allowed in medium-or high-risk areas 
+- Please fill the HS630 Visitor Induction Form with your contact details and check all items that apply to the induction 
+- All visitors must agree to follow any reasonable instruction in relation to health and safety. 
+- Report all work related hazards, incidents, injuries and illnesses to supervising staff members or teaching assistants
+
+</section>
+
+---
+
+# General safety in the classroom
+
+- No special gear is required
+- No food or drinks in the classroom
+- Please keep the classroom clean and tidy
+- Locate first aid equipment
+- Locate fire extinguishers
+
+You are responsible for the safety of you and others around you - Take care!
+
+- if you see something unsafe, tell your teacher or other staff member
+
+---
+
+<section data-background-image="https://images.unsplash.com/photo-1583947582886-f40ec95dd752?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.4>
+
+# COVID safety
+
+- You are welcome to use face masks and are even encouraged to use them
+- Sanitise/wash hands regularly
+- if you feel unwell, please stay at home
+
+</section>
+
+---
+
+<section data-background-image="./mathewsf23_emergency.jpg" data-background-position="right" data-background-size="contain">
+
+# Emergency Procedure
+
+In case of an emergency
+
+- call UNSW Security Services
+- do not call 000
+
+Security Services
+
+  - in an emergency <i class="fas fa-solid fa-phone"></i> 9385 6666
+  - everything else <i class="fas fa-solid fa-phone"></i> 9385 6000
+
+- Security Office located at Gate 2, open 24/7
+
+<a href="https://www.student.unsw.edu.au/security">
+            <i class="fas fa-solid fa-home"></i>
+</a>
+
+</section>
+
+---
+
+# First Aid - Physical
+
+- Location of first aid kit
+- Location of Automatic External Defibrillator
+- Any incident requiring the use of first aid, however minor, must be reported online to UNSW 
+
+---
+
+<section data-background="https://images.unsplash.com/photo-1656501378122-928d5ff4153e?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.4>
+
+# First Aid - Mental
+
+[UNSW First Responders](https://www.unsw.edu.au/planning-assurance/safety/safer-communities/gendered-violence/find-first-responders) are students and staff who are trained to offer you confidential support. They understand that reporting gendered violence can be difficult and can provide you with guidance and support.
+
+Michelle Cartwright, uDASH centre manager <a href="mailto:uDASH@unsw.edu.au" aria-label="envelope">
+            <i class="fas fa-envelope big-icon"></i> 
+</a>
+
+Michelle is also [ally@UNSW](https://www.edi.unsw.edu.au/get-involved/ally-network). The ally@UNSWnetwork aims to ensure UNSW is a safe and welcoming place for all LGBTIQ+ students and staff.
+
+</section>
 
 ---
 
@@ -121,6 +207,8 @@ Data experts across UNSW
 - 100+ data experts across UNSW's broad and diverse faculties (Science, Arts, Engineering, Medicine, Law, Business, and Aus. Defence Force Academy)
 - All experts researching cutting edge applications using data science tools
 
+<q> We translate large volumes of data into knowledge to support decision-making. ​</q>
+
 ---
 
 # uDASH
@@ -144,7 +232,7 @@ Our expertise:
 ---
 # Workshop Program
 
-<section>
+<section data-background-image="https://images.unsplash.com/photo-1435527173128-983b87201f4d?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.4>
 
 # Morning sessions 9:30am - 12:00pm
 
@@ -152,6 +240,8 @@ Our expertise:
 - Special talks 9:30 - 10:00am
 
 ---
+
+
 
 # Lunch 12:00pm - 1:30pm
 
@@ -180,8 +270,8 @@ Our expertise:
 # Monday
 
 Morning session:
-- Formalities
-- General introduction + logistics
+- Induction
+- Introduction to data science
 - Software + Intro to programming with R 
 
 Afternoon session:
@@ -195,7 +285,6 @@ Afternoon session:
 Morning session:
 - Meet a data scientist
   - Laura McKemmish, School of Chemistry 
-  - Boris Beranger, School of Mathematics and Statistics + Allianz
 - Exploratory data analysis 
 
 Afternoon session:
@@ -228,9 +317,30 @@ Afternoon session:
 
 # Friday
 
+<div class="multi-column">
+
+<div class="col1">
+
 - Presentations
 - Program wrap-up
 
+<img src="presentation2.jpeg" style="border-radius:50%; height: 40vh" >
+
+</div>
+
+<div class="col1">
+
+<img src="presentation1.jpeg" style="border-radius:50%; height: 30vh" >
+
+</div>
+
+</div>
+
+</section>
+
+---
+
+<section data-background="./group.jpeg" data-background-opacity=0.7>
 </section>
 
 ---
@@ -251,7 +361,7 @@ Dr. Boris Beranger
 <div class="col1">
 
 Dr. Elma Akand
-<img src="https://www.auspublaw.org/ba242e9/1540a640742a23be5/1632895910848/Farrah-Ahmed.jpg?format=original" height=200px>
+<img src="Elma_Akand_headshot.png" height=200px>
 
 Dr. Ryan Thompson
 <img src="https://ryan-thompson.github.io/resources/photo.jpg" height=200px>
@@ -294,3 +404,84 @@ Dr. Daniel Hewitt
 </a>
 
 For urgent matters find my <i class="fas fa-solid fa-phone"></i> on <i class="fab fa-brands fa-slack"></i> (Slack)
+
+---
+
+# BREAK 
+
+Quick stretch, walk around, switch tables
+
+What are you most excited for during the coming week?
+
+I go on a hike, and everytime I spot a cockatoo, I note down the temperature and atmospheric pressure. Can I use this data to investigate the relationship between temperature and pressure?
+
+---
+
+# What is data science?
+
+[Survey](https://www.menti.com/alsx726rihzo)
+
+---
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/al897dcp2ng8s9vxfy74xuo7vjysb26s/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+---
+
+# Get inspired!
+
+- Go to [//historyofdatascience.com](https://www.historyofdatascience.com/families/discover-data-science-icons/) and browse some profiles...
+
+- Or scroll through [the timeline](https://timeline.historyofdatascience.com/) 
+
+- Who is your favourite data science icon?
+  - an 18th century pioneer?
+  - a data revolutionary? a data hero?
+  - an artificial intelligence Jedi?
+
+
+---
+
+<section data-background-image="https://miro.medium.com/max/720/1*T5GfsoZ-IWK3rcVkZ7R2bw.png" data-background-size="contain">
+</section>
+
+---
+
+<section>
+
+# The four paradigms of research
+
+---
+
+# Paradigm 1: Experimentation
+
+Father of Modern science
+
+<img src="https://www.pioneeringminds.com/wp-content/uploads/2018/10/galileo-galilei-819977-1440x960.jpg" style="border-radius: 50%">
+
+---
+
+# Paradigm 2: Theory led experimentation
+
+<img src="https://scitechdaily.com/images/Event-Horizon-Telescope-Black-Hole-Image.jpg">
+
+---
+
+# Paradigm 3: Numerical modelling
+
+<embed src="https://earth.nullschool.net" width=90% height=500px>
+
+---
+
+# Paradigm 4: Data-intensive scientific discovery
+
+The concept of these four paradigms of research was coined by Jim Gray, a 1998 Turing Award winner, in 2007.
+
+</section>
+
+---
+
+# Data science is more than just prediction
+
+--- 
+
+# Introduction to programming with R and Rstudio
