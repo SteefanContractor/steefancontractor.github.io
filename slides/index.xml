@@ -1,4 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides | Steefan Contractor</title><link>https://SteefanContractor.github.io/slides/</link><atom:link href="https://SteefanContractor.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><description>Slides</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Nov 2023 17:22:03 +1100</lastBuildDate><item><title>Intro</title><link>https://SteefanContractor.github.io/slides/year10-data-sci-workshop/intro/</link><pubDate>Fri, 17 Nov 2023 17:22:03 +1100</pubDate><guid>https://SteefanContractor.github.io/slides/year10-data-sci-workshop/intro/</guid><description>&lt;link rel="stylesheet" href="../reveal_custom.css">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slides | Steefan Contractor</title><link>https://SteefanContractor.github.io/slides/</link><atom:link href="https://SteefanContractor.github.io/slides/index.xml" rel="self" type="application/rss+xml"/><description>Slides</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 28 Nov 2023 11:11:50 +1100</lastBuildDate><item><title>Deep Sea Talk</title><link>https://SteefanContractor.github.io/slides/deep-sea-talk/</link><pubDate>Tue, 28 Nov 2023 11:11:50 +1100</pubDate><guid>https://SteefanContractor.github.io/slides/deep-sea-talk/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+&lt;div class="vert-banner">
+&lt;img src="./img/UNSW_logo-portrait-light_transparent.png">
+&lt;img src="./img/Udash logo CMYK revised-03.png">
+&lt;/div>
+&lt;script>
+function add_vert_banner() {
+let vertbanner = document.querySelector("div.vert-banner");
+let reveal = document.querySelector(".reveal");
+reveal.insertBefore(vertbanner, reveal.firstChild);
+}
+window.onload = add_vert_banner();
+&lt;/script>
+&lt;section data-background-image="https://images.unsplash.com/photo-1445112098124-3e76dd67983c?q=80&amp;w=3872&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.5>
+&lt;h1 id="observing-oceans-from-above">Observing oceans from above&lt;/h1>
+&lt;p>Dr. Steefan Contractor&lt;/p>
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1445112098124-3e76dd67983c?q=80&amp;w=3872&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.5>
+&lt;h1 id="a-lot-happens-on-the-ocean-surface">A lot happens on the ocean surface&lt;/h1>
+&lt;ul>
+&lt;li>Interaction with the atmosphere
+&lt;ul>
+&lt;li>air sea heat fluxes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Interaction with the biosphere
+&lt;ul>
+&lt;li>confluence of birds, fish and mammals&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fisheries, transport, tourism and other commercial activities&lt;/li>
+&lt;li>Political and Defence related activities&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1528989292939-085939b5722d?q=80&amp;w=5166&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=1>&lt;/section>
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1549598685-0058b114c9d6?q=80&amp;w=3078&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.5>
+&lt;h1 id="sea-ice">Sea Ice&lt;/h1>
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1549598685-0058b114c9d6?q=80&amp;w=3078&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.5>
+&lt;h1 id="sea-ice-1">Sea Ice&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;img src="https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2023-03/ClimateDashboard-Antarctic-sea-ice-winter-maximum-graph-20230307-1400px.jpg?itok=I9czOFwT" style="height:20vh">
+&lt;br>
+&lt;img src="https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2023-03/ClimateDashboard-Antarctic-sea-ice-winter-maximum-map_202209_1400px.jpg?itok=G1R5j_vY" style="height:20vh">
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2023-03/ClimateDashboard-Antarctic-sea-ice-summer-minimum-graph-20230307-1400px.jpg?itok=qHONdopL" style="height:20vh">
+&lt;br>
+&lt;img src="https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2023-03/ClimateDashboard-Antarctic-sea-ice-summer-minimum-map_202302_1400px.jpg?itok=i-GXfY7N" style="height:20vh">
+&lt;/div>
+&lt;/div>
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="https://www.climate.gov/sites/default/files/styles/full_width_stretch_featured_image/public/2021-10/Antarctic_seaice_Oct_v_Jan_250m.jpg?itok=3hqMmRJT" data-background-position="right" data-background-size="contain">
+&lt;p style="text-align: left">Detecting sea ice from space
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&amp;w=4928&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.4>
+&lt;h1 id="uk-aus-space-bridge-grant">UK-Aus Space bridge Grant&lt;/h1>
+&lt;img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7wdx11_LaJpRT8sZPc_EcwHaEK%26pid%3DApi&amp;f=1&amp;ipt=bcce3e8299435589a46a0176f72bae31a5eba61677ccbd50bc5f30a9a619dac8&amp;ipo=images" style="border-radius:20%">
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;img src="https://spire.com/wp-content/themes/spire2021/img/spire-global-cubesat-satellite-logo.svg">
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="https://antarctic.org.au/wp-content/uploads/2021/10/ACEAS-Logo-Concept-1-WHT.png" style="height:10vh">
+&lt;/div>
+&lt;/div>
+&lt;/section>
+&lt;hr>
+&lt;h1 id="global-navigation-satellite-system---reflectometry">Global Navigation Satellite System - Reflectometry&lt;/h1>
+&lt;img src=./img/GNSS-R.jpg style="border-radius:10%">
+&lt;hr>
+&lt;h1 id="gnss-r-features">GNSS-R Features&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+Phase Noise
+&lt;img src="./img/phase-noise.jpg">
+&lt;/div>
+&lt;div class="col1">
+Excess Phase Noise
+&lt;img src="./img/excess-phase-noise.jpg">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;section data-background-image="img/feature-distribution.png" data-background-position="center" data-background-size="contain">
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="img/label-distribution.png" data-background-position="center" data-background-size="contain">
+&lt;/section>
+&lt;hr>
+&lt;h1 id="waterice-and-ice-type-classification">water/ice and ice type classification&lt;/h1>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;img src="./img/reduced-feature-scatter_waterice.png" style="height:30vh">
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="./img/reduced-feature-scatter-icetypes.png" style="height:30vh">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="thank-you">Thank you&lt;/h1>
+&lt;img style="border-radius:50%" src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250">
+&lt;br/>
+&lt;a href="mailto:s.contractor@unsw.edu.au" aria-label="envelope">
+&lt;i class="fas fa-envelope big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://twitter.com/stefancontracto" target="_blank" rel="noopener" aria-label="twitter">
+&lt;i class="fab fa-twitter big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://scholar.google.co.uk/citations?user=sEnHZ3AAAAAJ" target="_blank" rel="noopener" aria-label="google-scholar">
+&lt;i class="ai ai-google-scholar big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://github.com/steefancontractor" target="_blank" rel="noopener" aria-label="github">
+&lt;i class="fab fa-github big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://www.linkedin.com/in/steefan-contractor-b375bb209/" target="_blank" rel="noopener" aria-label="linkedin">
+&lt;i class="fab fa-linkedin big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://mastodon.au/@stefancontracto" target="_blank" rel="noopener" aria-label="mastodon">
+&lt;i class="fab fa-mastodon big-icon">&lt;/i>
+&lt;/a></description></item><item><title>Intro</title><link>https://SteefanContractor.github.io/slides/year10-data-sci-workshop/intro/</link><pubDate>Fri, 17 Nov 2023 17:22:03 +1100</pubDate><guid>https://SteefanContractor.github.io/slides/year10-data-sci-workshop/intro/</guid><description>&lt;link rel="stylesheet" href="../reveal_custom.css">
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 &lt;div class="vert-banner">
 &lt;img src="../img/UNSW_logo-portrait-light_transparent.png">
