@@ -64,7 +64,9 @@ slides:
 
 # Bayesian updates to multi-age Antarctic sea-ice concentrations using GNSS-R data
 
-Steefan Contractor
+Speaker: Steefan Contractor
+
+Coauthors: Shane Keating (UNSW), Jessica Cartwright (Spire Global), Alex Fraser (UTAS)
 
 ---
 
