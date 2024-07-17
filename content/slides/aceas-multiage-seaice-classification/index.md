@@ -196,7 +196,7 @@ Image sources:
 
 ---
 <section>
-<iframe src="img/First three principal components of features coloured by water-ice label.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://steefancontractor.github.io/plotly_plots/First%20three%20principal%20components%20of%20features%20coloured%20by%20water-ice%20label.html" width="100%" height="600px" style="border:none;"></iframe>
 
 ---
 
@@ -218,7 +218,7 @@ Image sources:
 
 <section>
 
-<embed src="img/First three principal components of features coloured by ice type labels.html" width="100%" height="600px" style="border:none;"></iframe>
+<embed src="https://steefancontractor.github.io/plotly_plots/First%20three%20principal%20components%20of%20features%20coloured%20by%20ice%20type%20labels.html" width="100%" height="600px" style="border:none;"></iframe>
 
 ---
 
