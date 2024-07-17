@@ -196,7 +196,7 @@ Image sources:
 
 ---
 <section>
-<iframe src="./img/First three principal components of features coloured by water-ice label.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="img/First three principal components of features coloured by water-ice label.html" width="100%" height="600px" style="border:none;"></iframe>
 
 ---
 
@@ -218,7 +218,7 @@ Image sources:
 
 <section>
 
-<embed src="./img/First three principal components of features coloured by ice type labels.html" width="100%" height="600px" style="border:none;"></iframe>
+<embed src="img/First three principal components of features coloured by ice type labels.html" width="100%" height="600px" style="border:none;"></iframe>
 
 ---
 
