@@ -1,4 +1,616 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steefan Contractor</title><link>https://SteefanContractor.github.io/</link><atom:link href="https://SteefanContractor.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Steefan Contractor</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://SteefanContractor.github.io/media/icon_hu4d574013bb10331a675ee8ec27a93153_23560_512x512_fill_lanczos_center_3.png</url><title>Steefan Contractor</title><link>https://SteefanContractor.github.io/</link></image><item><title>Deep Sea Talk</title><link>https://SteefanContractor.github.io/slides/deep-sea-talk/</link><pubDate>Tue, 28 Nov 2023 11:11:50 +1100</pubDate><guid>https://SteefanContractor.github.io/slides/deep-sea-talk/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steefan Contractor</title><link>https://SteefanContractor.github.io/</link><atom:link href="https://SteefanContractor.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Steefan Contractor</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://SteefanContractor.github.io/media/icon_hu4d574013bb10331a675ee8ec27a93153_23560_512x512_fill_lanczos_center_3.png</url><title>Steefan Contractor</title><link>https://SteefanContractor.github.io/</link></image><item><title>Aceas Multiage Seaice Classification</title><link>https://SteefanContractor.github.io/slides/aceas-multiage-seaice-classification/</link><pubDate>Thu, 11 Jul 2024 11:30:37 +1000</pubDate><guid>https://SteefanContractor.github.io/slides/aceas-multiage-seaice-classification/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+&lt;div class="vert-banner">
+&lt;img src="./img/UNSW_logo-portrait-light_transparent.png">
+&lt;img src="https://antarctic.org.au/wp-content/uploads/2021/10/ACEAS-Logo-Concept-1-WHT.png" style="height:12vh">
+&lt;img src="./img/Udash logo CMYK revised-03.png">
+&lt;/div>
+&lt;script>
+function add_vert_banner() {
+let vertbanner = document.querySelector("div.vert-banner");
+let reveal = document.querySelector(".reveal");
+reveal.insertBefore(vertbanner, reveal.firstChild);
+}
+window.onload = add_vert_banner();
+&lt;/script>
+&lt;h1 id="bayesian-updates-to-multi-age-antarctic-sea-ice-concentrations-using-gnss-r-data">Bayesian updates to multi-age Antarctic sea-ice concentrations using GNSS-R data&lt;/h1>
+&lt;p>Speaker: Steefan Contractor&lt;/p>
+&lt;p>Coauthors: Shane Keating (UNSW), Jessica Cartwright (Spire Global), Alex Fraser (UTAS)&lt;/p>
+&lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1549598685-0058b114c9d6?q=80&amp;w=3078&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.3>
+&lt;h2 id="sea-ice">Sea Ice&lt;/h2>
+&lt;ul>
+&lt;li>Floating ice that forms from the freezing of seawater&lt;/li>
+&lt;li>Melting and formation of sea ice affects the ocean salinity and heat content&lt;/li>
+&lt;li>The changes in ocean density and temperature affect the ocean circulation as evidenced by recent coverage on AMOC weakening&lt;/li>
+&lt;li>It affects the Earth&amp;rsquo;s energy balance by reflecting ten times more sunlight compared to water&lt;/li>
+&lt;li>It acts like a blanket affecting not just heat exchange between the ocean and atmosphere but also gases&lt;/li>
+&lt;li>Through the changes in polar air masses it also affects atmospheric circulation&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;section data-background-image="./img/sea-ice-types.png" data-background-opacity=1.0 data-background-size=80%>
+&lt;hr>
+&lt;p>Image sources:&lt;/p>
+&lt;ul>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://www.researchgate.net/publication/353599050_Novel_applications_of_GNSS-R_data_from_TechDemoSat-1_to_monitoring_the_cryosphere" target="_blank" rel="noopener">Novel application of GNSS-R data from TechDemoSat-1 to monitoring the cryosphere, Jessica Cartwright&lt;/a>&lt;/span>&lt;/li>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://www.ccin.ca/ccw/seaice/overview/types" target="_blank" rel="noopener">https://www.ccin.ca/ccw/seaice/overview/types&lt;/a>&lt;/li>
+&lt;li>&lt;span style="font-size: small;">Australian Antarctic Program
+&lt;ul>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://www.antarctica.gov.au/site/assets/files/47686/rs13801_rich-youd-2014-04-07-2x1a8995-lpr.1024x0.jpg" target="_blank" rel="noopener">https://www.antarctica.gov.au/site/assets/files/47686/rs13801_rich-youd-2014-04-07-2x1a8995-lpr.1024x0.jpg&lt;/a>&lt;/li>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://www.antarctica.gov.au/site/assets/files/47686/mawson-grease-ice-2016-jennifer-wressell.1200x0.jpg" target="_blank" rel="noopener">https://www.antarctica.gov.au/site/assets/files/47686/mawson-grease-ice-2016-jennifer-wressell.1200x0.jpg&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://www.sciencefriday.com/wp-content/uploads/2017/02/fce480147c3334975973a38782f1382c-min.jpg" target="_blank" rel="noopener">https://www.sciencefriday.com/wp-content/uploads/2017/02/fce480147c3334975973a38782f1382c-min.jpg&lt;/a>&lt;/li>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://www.youtube.com/watch?v=_iTBQiE2CuM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_iTBQiE2CuM&lt;/a>&lt;/li>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://johnenglander.net/wp/wp-content/uploads/2018/05/young-sea-ice.jpeg" target="_blank" rel="noopener">https://johnenglander.net/wp/wp-content/uploads/2018/05/young-sea-ice.jpeg&lt;/a>&lt;/li>
+&lt;li>&lt;span style="font-size: small;">&lt;a href="https://library.wmo.int/records/item/41953-wmo-sea-ice-nomenclature" target="_blank" rel="noopener">WMO Sea Ice Nomenclature WMO-No. 259&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;p>&lt;strong>Young Ice (YI)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Newly formed ice&lt;/li>
+&lt;li>can be rough or smooth&lt;/li>
+&lt;li>less than 30cm thick&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>First-year Ice (FYI)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Ice that has survived one summer melt season&lt;/li>
+&lt;li>can be level, rough or have ridges&lt;/li>
+&lt;li>30cm to 2m thick&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Multi-year Ice (MYI)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Ice that has survived more than one summer melt season&lt;/li>
+&lt;li>typically smoother than FYI&lt;/li>
+&lt;li>Over 2.5m thick and hence protrudes above the waterline&lt;/li>
+&lt;li>has extremely low salinity compared to YI and FYI&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="remote-sensing-of-sea-ice">Remote Sensing of Sea Ice&lt;/h2>
+&lt;ul>
+&lt;li>Active sensors
+&lt;ul>
+&lt;li>Radar altimeters (CrysoSat-2)&lt;/li>
+&lt;li>Laser altimeters (IceSat-2)&lt;/li>
+&lt;li>Scatterometers (Metop A/B/C - ASCAT)&lt;/li>
+&lt;li>Synthetic Aperture Radar (Radarsat-2)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Passive sensors
+&lt;ul>
+&lt;li>Passive microwave radiometers (SMOS)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Hybrid sensors
+&lt;ul>
+&lt;li>Global Navigation Satellite System Reflectometry - GNSS-R&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="gnss-r">GNSS-R&lt;/h2>
+&lt;section data-background-image="./img/AdobeStock_429767427.jpeg" data-background-opacity=0.5 data-background-size="cover">
+&lt;div style="margin-top: 80px;">
+&lt;img src="./img/GNSS-R - signal to features schematic.png" style="max-width: 100%;">
+&lt;/div>
+&lt;/section>
+&lt;hr>
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;h2 id="iup-multiyear-ice-concentration-and-other-sea-ice-types-version-aq2-antarctic">IUP Multiyear ice concentration and other sea ice types, Version AQ2 (Antarctic)&lt;/h2>
+&lt;ul>
+&lt;li>Provides YI, FYI and MYI concentrations&lt;/li>
+&lt;li>Developed by Institute of Environmental Physics, University of Bremen&lt;/li>
+&lt;li>Uses passive microwave (AMSR2) and scatterometer (ASCAT instruments on Metop A/B/C) data to derive initial estimates&lt;/li>
+&lt;li>Corrects the initial estimates using 2m surface air temperature and sea ice drift data&lt;/li>
+&lt;li>12.5km x 12.5km grid resolution&lt;/li>
+&lt;/ul>
+&lt;p class="citation"> Melsheimer, Christian; Spreen, Gunnar; Ye, Yufang; Shokr, Mohammed (2019): Multiyear Ice Concentration, Antarctic, 12.5 km grid, cold seasons 2013-2018 (from satellite). PANGAEA, https://doi.org/10.1594/PANGAEA.909054
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="./img/Original U.Brem non zero ice concentration distribution.png">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;div class="multi-column">
+&lt;div class="col1" style="margin-top: 100px;">
+&lt;h2 id="sea-ice-signal-in-gnss-r-features">Sea Ice Signal in GNSS-R features?&lt;/h2>
+&lt;/div>
+&lt;div class="col2">
+&lt;img src="./img/Histogram of original features min-max-scaled.png">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;section>
+&lt;iframe src="./img/First three principal components of features coloured by water-ice label.html" width="100%" height="600px" style="border:none;">&lt;/iframe>
+&lt;hr>
+&lt;p>&lt;strong>Some details&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>PCA data:
+&lt;ul>
+&lt;li>water - total ice concentration = 0%&lt;/li>
+&lt;li>ice - total ice concentration &amp;gt; 99%&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>PCA features:
+&lt;ul>
+&lt;li>reflectivity1&lt;/li>
+&lt;li>snr_reflected1&lt;/li>
+&lt;li>power_reflected1&lt;/li>
+&lt;li>phase_noise1&lt;/li>
+&lt;li>excess_phase_noise1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>total explained variance: 99.25%&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;section>
+&lt;p>&lt;embed src="./img/First three principal components of features coloured by ice type labels.html" width="100%" height="600px" style="border:none;">&lt;/iframe>&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Some details&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>PCA data:
+&lt;ul>
+&lt;li>YI - YI ice concentration &amp;gt; 90%&lt;/li>
+&lt;li>FYI - FYI ice concentration &amp;gt; 99.9%&lt;/li>
+&lt;li>MYI - MYI ice concentration &amp;gt; 99%&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>PCA features:
+&lt;ul>
+&lt;li>reflectivity1&lt;/li>
+&lt;li>snr_reflected1&lt;/li>
+&lt;li>power_reflected1&lt;/li>
+&lt;li>phase_noise1&lt;/li>
+&lt;li>excess_phase_noise1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>total explained variance: 99.58%&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;div class="multi-column">
+&lt;div class="col1" style="margin-top: 100px">
+&lt;h2 id="correlation-amongst-gnss-r-features-and-ice-types">Correlation amongst GNSS-R features and ice types&lt;/h2>
+&lt;/div>
+&lt;div class="col2">
+&lt;img src="./img/Correlation heatmap of engineered features and labels.png" height="640px">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;section>
+&lt;h2 id="geographic-distribution">Geographic distribution&lt;/h2>
+&lt;img src="./img/Geographic distribution of ALL GNSS-R observations.png">
+&lt;hr>
+&lt;img src="./img/Geographic distribution of only GNSS-R observations with ice conc >= 80%25.png" height="320px">
+&lt;div>
+&lt;img src="./img/S_202009_conc_hires_v3.0.png" height="360px">
+&lt;img src="./img/S_202002_conc_hires_v3.0.png" height="360px">
+&lt;/div>
+&lt;hr>
+&lt;img src="./img/Antarctic yearly sea ice extent.png" height="500px">
+&lt;p class="citation"> National Snow and Ice Data Center, Boulder, Colorado USA. https://nsidc.org/data/seaice_index, last access: 2024-07-16
+&lt;p class="citation"> J. C. Comiso, A. C. Bliss, R. Gersten, C. L. Parkinson, and T. Markus (2024), Current State of Sea Ice Cover, https://earth.gsfc.nasa.gov/cryo/data/current-state-sea-ice-cover, last access: 2024-07-16.
+&lt;/section>
+&lt;hr>
+&lt;h2 id="ice-concentrations-as-probabilities">Ice concentrations as probabilities&lt;/h2>
+&lt;ul>
+&lt;li>the spatial footprint of GNSS-R grid is around 2.5% of the size of the IUP grid&lt;/li>
+&lt;li>interprit ice concentration as the probabiliy of seeing that kind of ice inside that grid&lt;/li>
+&lt;li>assume that the ice concentrations can be erroneous&lt;/li>
+&lt;li>assume higher ice concentrations are more likely to be correct&lt;/li>
+&lt;li>semi-supervised approach: learn a mapping from GNSS-R to ice labels where IUP concentrations are close to 100%&lt;/li>
+&lt;li>update the IUP concentrations using the learned mapping&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;section>
+&lt;h2 id="bayesian-update">Bayesian update&lt;/h2>
+&lt;div style="font-size: 0.4em; margin-top: 100px">
+$$
+\begin{align*}
+P(true\, label\, |\, model\, pred) &amp;= \frac{P(model\, pred\, |\, true\, label) \times P(true\, label)}{P(model\, pred)} \\
+&amp;= \frac{P(model\, pred\, |\, true\, label) \times P(true\, label)}{\sum_{true\, labels}{P(model\, pred\, ,\, true\, label)}} \\
+&amp;= \frac{P(model\, pred\, |\, true\, label) \times P(true\, label)}{\sum_{true\, labels}{P(model\, pred\, |\, true\, label) \times P(true\, label)}}
+\end{align*}
+$$
+&lt;/div>
+&lt;hr>
+&lt;p>Two ways to get $P(model\ pred\ |\ true\ label)$:&lt;/p>
+&lt;ul>
+&lt;li>Using a tabular ML model - model calibration required
+&lt;ul>
+&lt;li>calibrate using test dataset and Bayes rule again&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div style="font-size:0.4em">
+$$
+P(pred\ |\ true) = \frac{P(true\ |\ pred)P(pred)}{\sum_{pred\ labels}{P(true\ |\ pred)P(pred)}}
+$$
+&lt;/div>
+&lt;ul>
+&lt;li>Using Robust Mixture Discriminent Analysis (RMDA)&lt;/li>
+&lt;/ul>
+&lt;p class="citation"> Bouveyron, C., &amp; Girard, S. (2009). Robust supervised classification with mixture models: Learning from data with uncertain labels. Pattern Recognition, 42(11), 2649–2658. https://doi.org/10.1016/j.patcog.2009.03.027
+&lt;/section>
+&lt;hr>
+&lt;div class="multi-column">
+&lt;div class="col1" style="margin-top:150px">
+&lt;h2 id="which-ml-model">Which ML model?&lt;/h2>
+&lt;/div>
+&lt;div class="col4" >
+&lt;img src="./img/skmodels accuracy comparison.png" width=300px>
+&lt;img src="./img/skmodels f1 comparison.png" width=300px>
+&lt;div>
+&lt;img src="./img/skmodels matthews corr coef comparison.png" width=300px>
+&lt;img src="./img/skmodels fit time comparison.png" width=300px>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;section>
+&lt;h2 id="decision-tree-ensemble-methods">Decision tree ensemble methods&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Random Forest&lt;/strong>: Fits an ensemble of N trees on random subsets (known as bagging) of data and predicts with a majority vote.&lt;/li>
+&lt;li>&lt;strong>Adaptive Gradient Boosting&lt;/strong>: Trains N trees sequentially, each tree correcting the errors of the previous tree by weighting the data points that were misclassified. This is known as boosting.&lt;/li>
+&lt;li>&lt;strong>Gradient Boosting&lt;/strong>: Also a boosting method in that it trains N trees sequentially, however, instead of weighting the data points, it fits each tree to the residuals of the previous tree.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="lightgbm">LightGBM&lt;/h2>
+&lt;p>Key improvements over vanilla gradient boosting:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Histogram-based splitting&lt;/strong>: LightGBM bins the data points into discrete bins and then splits the bins instead of the data points. This reduces the complexity of the model and speeds up training.&lt;/li>
+&lt;li>&lt;strong>Leaf-wise growth&lt;/strong>: Instead of growing the tree level-wise, LightGBM grows the tree leaf-wise. This reduces the number of nodes in the tree and hence the complexity of the model.&lt;/li>
+&lt;li>&lt;strong>Gradient-based One-Side Sampling&lt;/strong>: LightGBM samples the data points based on the gradient of the loss function. This speeds up training by focusing on the data points that are more informative.&lt;/li>
+&lt;li>&lt;strong>Exclusive Feature Bundling&lt;/strong>: LightGBM bundles exclusive features together to reduce the number of features that need to be considered during training.&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;hr>
+&lt;section>
+&lt;h2 id="gaussian-mixture-discriminant-analysis">Gaussian Mixture Discriminant Analysis&lt;/h2>
+&lt;div style="font-size: 0.4em;">
+\[
+\begin{align*}
+G &amp;\sim Discrete(K) \\
+C &amp;\sim Discrete(L) \\
+X &amp;\in \mathbb{R}^p \\
+p(x|C=i) &amp;= \sum_{j=1}^{K} P(C=i,G=j)p(x|G=j) \\
+p(x) &amp;= \sum_{i=1}^L\sum_{j=1}^{K} P(C=i,G=j)p(x|G=j) \\
+&amp;= \sum_{i=1}^L\sum_{j=1}^{K} \pi_{ij}\phi(x;\mu_ij,\Sigma_ij)
+\end{align*}
+\]
+Here $\pi_{ij}$ is the mixing coefficient such that $\sum_{j=1}^K \pi_{ij} = 1$, and $\phi(x;\mu_ij,\Sigma_ij)$ is the multivariate Gaussian distribution with mean $\mu_ij$ and covariance $\Sigma_ij$.
+&lt;/div>
+&lt;hr>
+&lt;h2 id="robust-mixture-discriminant-analysis">Robust Mixture Discriminant Analysis&lt;/h2>
+&lt;div style="font-size: 0.4em;">
+\[
+\begin{align*}
+p(x) &amp;= \sum_{i=1}^L\sum_{j=1}^{K} P(C=i,G=j)p(x|G=j) \\
+&amp;= \sum_{i=1}^L\sum_{j=1}^{K} P(C=i|G=j)P(G=j)p(x|G=j) \\
+&amp;= \sum_{i=1}^L\sum_{j=1}^{K} r_{ij}\pi_j\phi(x;\mu_j,\Sigma_j)
+\end{align*}
+\]
+Since $\pi_j$ does not depend on $C$, we can fit a gaussian mixture model (unsupervised) to get $\pi_j$. To get the, $L\times K$, matrix $R=(r_{ij})$ parameters, we maximise the log likelihood:
+\[
+l(R) = \sum_{i=1}^{L}\sum_{x\in \mathcal{C}_i} log(R_i\Psi(x))
+\]
+where $\Psi(x) = (P(S=1|X=x),P(S=1|X=x),...,P(S=K|X=x))^t$ and $\mathcal{C}_i=\{x_l\}$
+such that $x_l$ belongs to class $C=i$,
+w.r.t. $r_{ij}\in [0,1], \forall i\in {1,...,L}\text{ and }j\in{1,...,K}$,
+subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
+&lt;/div>
+&lt;hr>
+&lt;img src="./img/MDA vs RMDA paper figure.png" height="640px">
+&lt;/section>
+&lt;hr>
+&lt;section>
+&lt;h2 id="class-rebalancing">Class rebalancing&lt;/h2>
+&lt;!-- LGBM confusion matrix
+['YI_conc', 'FYI_conc', 'MYI_conc', 'water_conc']
+[[0.59237875 0.27944573 0.0369515 0.09122402]
+[0.02884615 0.94346154 0.01884615 0.00884615]
+[0.08886389 0.64904387 0.22497188 0.03712036]
+[0.02849003 0.01745014 0.00747863 0.9465812 ]] -->
+&lt;div class="multi-column">
+&lt;div class="col1">
+&lt;ul>
+&lt;li>Training score: 83.7%&lt;/li>
+&lt;li>Validation score: 81.3%&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col1" style="font-size:0.4em">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>YI&lt;/th>
+&lt;th>FYI&lt;/th>
+&lt;th>MYI&lt;/th>
+&lt;th>water&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>YI&lt;/strong>&lt;/td>
+&lt;td>0.59237875&lt;/td>
+&lt;td>0.27944573&lt;/td>
+&lt;td>0.0369515&lt;/td>
+&lt;td>0.09122402&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>FYI&lt;/strong>&lt;/td>
+&lt;td>0.02884615&lt;/td>
+&lt;td>0.94346154&lt;/td>
+&lt;td>0.01884615&lt;/td>
+&lt;td>0.00884615&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>MYI&lt;/strong>&lt;/td>
+&lt;td>0.08886389&lt;/td>
+&lt;td>0.64904387&lt;/td>
+&lt;td>0.22497188&lt;/td>
+&lt;td>0.03712036&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>water&lt;/strong>&lt;/td>
+&lt;td>0.02849003&lt;/td>
+&lt;td>0.01745014&lt;/td>
+&lt;td>0.00747863&lt;/td>
+&lt;td>0.9465812&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;ul>
+&lt;li>The entire dataset contains 7.39M rows.&lt;/li>
+&lt;li>After filtering rows where we have high confidence in labels (YI&amp;gt;90%, FYI&amp;gt;99.9%, MYI&amp;gt;99.%,Water=100%), we are left with:
+&lt;ul>
+&lt;li>YI: 9801 rows&lt;/li>
+&lt;li>FYI: 28266 rows&lt;/li>
+&lt;li>MYI: 9805 rows&lt;/li>
+&lt;li>Water: 3.18M rows&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Solution&lt;/strong>: SMOTE based class rebalancing&lt;/p>
+&lt;hr>
+&lt;h2 id="smote">SMOTE&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Synthetic Minority Over-sampling Technique&lt;/p>
+&lt;ol>
+&lt;li>Identify the minority class&lt;/li>
+&lt;li>Find its nearest neighbours&lt;/li>
+&lt;li>Generate synthetic samples by interpolating between the minority class and its neighbours&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>After SMOTE each class contains 3.18M rows&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>So we randomly undersampled and treated the number of samples in each class as a hyperparameter&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>More sophisticated undersampling techniques (Tomek, Edited Nearest Neighbours) did note prune the dataset enough&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="performance-after-class-rebalancing">Performance after class rebalancing&lt;/h2>
+&lt;div style="font-size:0.4em">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Number of resampled rows in each class&lt;/td>
+&lt;td>~1.6M&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Training accuracy&lt;/td>
+&lt;td>99.34%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Validation accuracy&lt;/td>
+&lt;td>99.12%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Test accuracy&lt;/td>
+&lt;td>96.34%&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Test Confusion matrix&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>YI&lt;/th>
+&lt;th>FYI&lt;/th>
+&lt;th>MYI&lt;/th>
+&lt;th>water&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>YI&lt;/strong>&lt;/td>
+&lt;td>0.67241379&lt;/td>
+&lt;td>0.15922921&lt;/td>
+&lt;td>0.04158215&lt;/td>
+&lt;td>0.12677485&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>FYI&lt;/strong>&lt;/td>
+&lt;td>0.04790419&lt;/td>
+&lt;td>0.84677703&lt;/td>
+&lt;td>0.08559352&lt;/td>
+&lt;td>0.01972526&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>MYI&lt;/strong>&lt;/td>
+&lt;td>0.046875&lt;/td>
+&lt;td>0.25878906&lt;/td>
+&lt;td>0.64257812&lt;/td>
+&lt;td>0.05175781&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>water&lt;/strong>&lt;/td>
+&lt;td>0.01741254&lt;/td>
+&lt;td>0.00994283&lt;/td>
+&lt;td>0.00626461&lt;/td>
+&lt;td>0.96638002&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;/section>
+&lt;hr>
+&lt;h2 id="updated-ice-probability-density">Updated ice probability density&lt;/h2>
+&lt;img src="./img/updated non-zero ice distributions.png" height=600px>
+&lt;hr>
+&lt;h2 id="umap-uniform-manifold-approximation-and-projection">UMAP (Uniform Manifold Approximation and Projection)&lt;/h2>
+&lt;ul>
+&lt;li>UMAP is a non-linear dimensionality reduction technique that is particularly well-suited for visualizing complex data in a low-dimensional space&lt;/li>
+&lt;li>UMAP assumes that high-dimensional data lies on a low-dimensional manifold embedded in the higher-dimensional space&lt;/li>
+&lt;li>UMAP first constructs a weighted k-nearest neighbor graph from the high-dimensional data&lt;/li>
+&lt;li>UMAP then defines a low-dimensional representation and uses stochastic gradient descent to optimize the layout of the low-dimensional points, preserving the structure of the high-dimensional graph as closely as possible&lt;/li>
+&lt;li>It thus preserves both local and global structure of the data&lt;/li>
+&lt;li>Supervised mode:
+&lt;ul>
+&lt;li>During knn graph construction, UMAP uses the labels to weight the edges in the graph so that points with the same label are closer in the low-dimensional space&lt;/li>
+&lt;li>Also adds a loss term to the optimization function that penalizes points with the same label being far apart in the low-dimensional space&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="performance-after-umap-feature-transformation">Performance after UMAP feature transformation&lt;/h2>
+&lt;div style="font-size:0.4em">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Number of resampled rows in each class&lt;/td>
+&lt;td>~300K&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Training accuracy&lt;/td>
+&lt;td>99.99%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Validation accuracy&lt;/td>
+&lt;td>99.84%&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Test accuracy&lt;/td>
+&lt;td>93.34%&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Test Confusion matrix&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>YI&lt;/th>
+&lt;th>FYI&lt;/th>
+&lt;th>MYI&lt;/th>
+&lt;th>water&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>YI&lt;/strong>&lt;/td>
+&lt;td>0.95866935&lt;/td>
+&lt;td>0.02116935&lt;/td>
+&lt;td>0.0141129&lt;/td>
+&lt;td>0.00604839&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>FYI&lt;/strong>&lt;/td>
+&lt;td>0.01243201&lt;/td>
+&lt;td>0.95648796&lt;/td>
+&lt;td>0.02175602&lt;/td>
+&lt;td>0.00932401&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>MYI&lt;/strong>&lt;/td>
+&lt;td>0.01208459&lt;/td>
+&lt;td>0.02819738&lt;/td>
+&lt;td>0.95166163&lt;/td>
+&lt;td>0.00805639&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>water&lt;/strong>&lt;/td>
+&lt;td>0.04524251&lt;/td>
+&lt;td>0.00951845&lt;/td>
+&lt;td>0.02106578&lt;/td>
+&lt;td>0.92417327&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="updated-ice-probability-density-1">Updated ice probability density&lt;/h2>
+&lt;img src="./img/UMAP updated non-zero ice distributions.png" height=600px>
+&lt;hr>
+&lt;h3 id="updated-geographic-distribution---winter">Updated geographic distribution - winter&lt;/h3>
+&lt;div class="multi-column">
+&lt;div class="col2">
+&lt;img src="./img/Original U.Brem sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;">
+&lt;img src="./img/UMAP-LGBM updated sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;">
+&lt;img src="./img/UMAP-RMDA updated sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;">
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="./img/sod_ant_20200917.png" style="margin-top: 150px">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h3 id="updated-geo-distribution---summer">Updated geo distribution - summer&lt;/h3>
+&lt;div class="multi-column">
+&lt;div class="col2">
+&lt;img src="./img/Original U.Brem sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;">
+&lt;img src="./img/UMAP-LGBM updated sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;">
+&lt;img src="./img/UMAP-RMDA updated sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;">
+&lt;/div>
+&lt;div class="col1">
+&lt;img src="./img/sod_ant_20200213.png" style="margin-top: 150px">
+&lt;/div>
+&lt;/div>
+&lt;hr>
+&lt;h1 id="thank-you">Thank you&lt;/h1>
+&lt;img style="border-radius:50%" src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250">
+&lt;br/>
+&lt;a href="mailto:s.contractor@unsw.edu.au" aria-label="envelope">
+&lt;i class="fas fa-envelope big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://twitter.com/stefancontracto" target="_blank" rel="noopener" aria-label="twitter">
+&lt;i class="fab fa-twitter big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://scholar.google.co.uk/citations?user=sEnHZ3AAAAAJ" target="_blank" rel="noopener" aria-label="google-scholar">
+&lt;i class="ai ai-google-scholar big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://github.com/steefancontractor" target="_blank" rel="noopener" aria-label="github">
+&lt;i class="fab fa-github big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://www.linkedin.com/in/steefan-contractor-b375bb209/" target="_blank" rel="noopener" aria-label="linkedin">
+&lt;i class="fab fa-linkedin big-icon">&lt;/i>
+&lt;/a>
+&lt;a href="https://mastodon.au/@stefancontracto" target="_blank" rel="noopener" aria-label="mastodon">
+&lt;i class="fab fa-mastodon big-icon">&lt;/i>
+&lt;/a></description></item><item><title>Deep Sea Talk</title><link>https://SteefanContractor.github.io/slides/deep-sea-talk/</link><pubDate>Tue, 28 Nov 2023 11:11:50 +1100</pubDate><guid>https://SteefanContractor.github.io/slides/deep-sea-talk/</guid><description>&lt;link rel="stylesheet" href="reveal_custom.css">
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 &lt;div class="vert-banner">
 &lt;img src="./img/UNSW_logo-portrait-light_transparent.png">
@@ -745,4 +1357,4 @@ window.onload = add_vert_banner();
 &lt;/a>
 &lt;a href="https://mastodon.au/@stefancontracto" target="_blank" rel="noopener" aria-label="mastodon">
 &lt;i class="fab fa-mastodon big-icon">&lt;/i>
-&lt;/a></description></item><item><title>Sea Ice Segmentation</title><link>https://SteefanContractor.github.io/project/seaicesegmentation/</link><pubDate>Sun, 04 Jun 2023 23:08:04 +1000</pubDate><guid>https://SteefanContractor.github.io/project/seaicesegmentation/</guid><description/></item><item><title>Is It Hot Right Now?</title><link>https://SteefanContractor.github.io/project/isithotrightnow/</link><pubDate>Sun, 04 Jun 2023 23:01:51 +1000</pubDate><guid>https://SteefanContractor.github.io/project/isithotrightnow/</guid><description/></item><item><title>Gap-filling of Ocean Temperature Timeseries</title><link>https://SteefanContractor.github.io/project/oceangapfilling/</link><pubDate>Sun, 04 Jun 2023 22:58:01 +1000</pubDate><guid>https://SteefanContractor.github.io/project/oceangapfilling/</guid><description/></item><item><title>Open Politics</title><link>https://SteefanContractor.github.io/project/openpolitics/</link><pubDate>Sun, 04 Jun 2023 22:52:45 +1000</pubDate><guid>https://SteefanContractor.github.io/project/openpolitics/</guid><description/></item><item><title>Australian Legislation Amendment Frequency</title><link>https://SteefanContractor.github.io/project/auslegislation/</link><pubDate>Sun, 04 Jun 2023 22:34:23 +1000</pubDate><guid>https://SteefanContractor.github.io/project/auslegislation/</guid><description/></item><item><title>Kelvin Wake Detection</title><link>https://SteefanContractor.github.io/project/kelvinwakes/</link><pubDate>Sun, 04 Jun 2023 22:12:40 +1000</pubDate><guid>https://SteefanContractor.github.io/project/kelvinwakes/</guid><description/></item><item><title>UK/Aus Space Bridge</title><link>https://SteefanContractor.github.io/project/spacebridge/</link><pubDate>Sun, 04 Jun 2023 21:34:35 +1000</pubDate><guid>https://SteefanContractor.github.io/project/spacebridge/</guid><description/></item><item><title/><link>https://SteefanContractor.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://SteefanContractor.github.io/admin/config.yml</guid><description/></item></channel></rss>
+&lt;/a></description></item><item><title>Sea Ice Segmentation</title><link>https://SteefanContractor.github.io/project/seaicesegmentation/</link><pubDate>Sun, 04 Jun 2023 23:08:04 +1000</pubDate><guid>https://SteefanContractor.github.io/project/seaicesegmentation/</guid><description/></item><item><title>Is It Hot Right Now?</title><link>https://SteefanContractor.github.io/project/isithotrightnow/</link><pubDate>Sun, 04 Jun 2023 23:01:51 +1000</pubDate><guid>https://SteefanContractor.github.io/project/isithotrightnow/</guid><description/></item><item><title>Gap-filling of Ocean Temperature Timeseries</title><link>https://SteefanContractor.github.io/project/oceangapfilling/</link><pubDate>Sun, 04 Jun 2023 22:58:01 +1000</pubDate><guid>https://SteefanContractor.github.io/project/oceangapfilling/</guid><description/></item><item><title>Open Politics</title><link>https://SteefanContractor.github.io/project/openpolitics/</link><pubDate>Sun, 04 Jun 2023 22:52:45 +1000</pubDate><guid>https://SteefanContractor.github.io/project/openpolitics/</guid><description/></item><item><title>Australian Legislation Amendment Frequency</title><link>https://SteefanContractor.github.io/project/auslegislation/</link><pubDate>Sun, 04 Jun 2023 22:34:23 +1000</pubDate><guid>https://SteefanContractor.github.io/project/auslegislation/</guid><description/></item><item><title>Kelvin Wake Detection</title><link>https://SteefanContractor.github.io/project/kelvinwakes/</link><pubDate>Sun, 04 Jun 2023 22:12:40 +1000</pubDate><guid>https://SteefanContractor.github.io/project/kelvinwakes/</guid><description/></item><item><title>UK/Aus Space Bridge</title><link>https://SteefanContractor.github.io/project/spacebridge/</link><pubDate>Sun, 04 Jun 2023 21:34:35 +1000</pubDate><guid>https://SteefanContractor.github.io/project/spacebridge/</guid><description/></item></channel></rss>
