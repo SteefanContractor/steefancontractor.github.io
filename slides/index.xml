@@ -124,7 +124,7 @@ window.onload = add_vert_banner();
 &lt;/div>
 &lt;hr>
 &lt;section>
-&lt;iframe src="img/First three principal components of features coloured by water-ice label.html" width="100%" height="600px" style="border:none;">&lt;/iframe>
+&lt;iframe src="https://steefancontractor.github.io/plotly_plots/First%20three%20principal%20components%20of%20features%20coloured%20by%20water-ice%20label.html" width="100%" height="600px" style="border:none;">&lt;/iframe>
 &lt;hr>
 &lt;p>&lt;strong>Some details&lt;/strong>&lt;/p>
 &lt;ul>
@@ -148,7 +148,7 @@ window.onload = add_vert_banner();
 &lt;/section>
 &lt;hr>
 &lt;section>
-&lt;p>&lt;embed src="img/First three principal components of features coloured by ice type labels.html" width="100%" height="600px" style="border:none;">&lt;/iframe>&lt;/p>
+&lt;p>&lt;embed src="https://steefancontractor.github.io/plotly_plots/First%20three%20principal%20components%20of%20features%20coloured%20by%20ice%20type%20labels.html" width="100%" height="600px" style="border:none;">&lt;/iframe>&lt;/p>
 &lt;hr>
 &lt;p>&lt;strong>Some details&lt;/strong>&lt;/p>
 &lt;ul>
