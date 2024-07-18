@@ -112,7 +112,7 @@ window.onload = add_vert_banner();
 &lt;/ul>
 &lt;/aside>
 &lt;hr>
-&lt;section>
+&lt;section data-background-image="./img/AdobeStock_587380910.jpeg" data-background-opacity=0.3>
 &lt;h2 id="remote-sensing-of-sea-ice">Remote Sensing of Sea Ice&lt;/h2>
 &lt;span class="fragment " >
 &lt;p>Active sensors&lt;/p>
@@ -737,6 +737,7 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 &lt;/div>
 &lt;/div>
 &lt;hr>
+&lt;section data-background-image="https://images.unsplash.com/photo-1493329087152-853abc04b84b?q=80&amp;w=3876&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.3>
 &lt;ul>
 &lt;li>GNSS-R is an exciting new data source for monitoring sea ice at very high resolution&lt;/li>
 &lt;li>We have shown how it can be used to update and improve existing ice concentration datasets&lt;/li>
@@ -744,6 +745,7 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 &lt;li>this was only one year of data, the accuracy wii improve with more data&lt;/li>
 &lt;/ul>
 &lt;p>More validation required! We are open to ideas&lt;/p>
+&lt;/section>
 &lt;hr>
 &lt;h1 id="thank-you">Thank you&lt;/h1>
 &lt;img style="border-radius:50%" src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250">
