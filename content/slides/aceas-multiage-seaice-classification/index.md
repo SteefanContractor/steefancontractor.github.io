@@ -175,7 +175,7 @@ Image sources:
 
 ---
 
-<section>
+<section data-background-image="./img/AdobeStock_587380910.jpeg" data-background-opacity=0.3>
 
 ## Remote Sensing of Sea Ice
 
@@ -744,12 +744,16 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 
 ---
 
+<section data-background-image="https://images.unsplash.com/photo-1493329087152-853abc04b84b?q=80&w=3876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.3>
+
 - GNSS-R is an exciting new data source for monitoring sea ice at very high resolution
 - We have shown how it can be used to update and improve existing ice concentration datasets
 - we pick up many more locations previously missed
 - this was only one year of data, the accuracy wii improve with more data
 
 More validation required! We are open to ideas
+
+</section>
 
 ---
 
