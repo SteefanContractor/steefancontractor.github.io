@@ -26,11 +26,11 @@ bio:
 
 # Interests to show in About widget
 interests:
-  - Generative Artificial Intelligence
-  - AI and Computer Vision Applications in Climate Sciences and Remote Sensing
-  - Bayesian Modeling with Stochastic Variational Inference
-  - Spatiotemporal Modeling and Timeseries Forecasting
-  - Quantum Machine Learning
+  - Probabilistic machine learning and generative artificial intelligence 
+  - Spatiotemporal modeling and timeseries forecasting in climate, remote sensing, renewable energy, economics and finance
+  - Reinforcement learning for optimization of complex systems
+  - Techniques that combine AI, statistical modeling and physics
+  - Bayesian modelling with stochastic variational inference
 
 # Education to show in About widget
 education:
@@ -85,7 +85,9 @@ email: 'stefan.contractor@gmail.com'
 highlight_name: true
 ---
 
-I am a research data scientist with a doctorate in climate science and nearly five years of post-doctorate experience as a trans-disciplinary statistical and deep learning consultant at the University of New South Wales (UNSW). I have experience with statistical modeling, computer vision, and AI applications in the fields of climate science and remote sensing, and also natural language processing of large texts in law  and politics. I also like to make complex concepts simple by creating interactive dashboards. Refer to my list of featured projects for more details. 
+I am a research data scientist with a doctorate in climate science and nearly five years of post-doctorate experience as a trans-disciplinary statistical and deep learning consultant at the University of New South Wales (UNSW). 
+
+<!-- I have experience with statistical modeling, computer vision, and AI applications in the fields of climate science and remote sensing, and also natural language processing of large texts in law  and politics. I also like to make complex concepts simple by creating interactive dashboards. Refer to my list of featured projects for more details.  -->
 
 In my spare time I like to ride bicycles, climb rocks and ferment food and drinks. 
 {style="text-align: justify;"}

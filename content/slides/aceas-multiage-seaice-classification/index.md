@@ -68,6 +68,14 @@ Speaker: Steefan Contractor
 
 Coauthors: Shane Keating (UNSW), Jessica Cartwright (Spire Global), Alex Fraser (UTAS)
 
+{{< speaker_note >}}
+
+Key points:
+- Coauthors in no particular order
+- why updating as opposed to straight up prediction?
+
+{{< /speaker_note >}}
+
 ---
 
 <section data-background-image="https://images.unsplash.com/photo-1549598685-0058b114c9d6?q=80&w=3078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.3>
@@ -81,11 +89,29 @@ Coauthors: Shane Keating (UNSW), Jessica Cartwright (Spire Global), Alex Fraser 
 - It acts like a blanket affecting not just heat exchange between the ocean and atmosphere but also gases
 - Through the changes in polar air masses it also affects atmospheric circulation
 
+{{< speaker_note >}}
+
+- don't spend too much time on context
+- audience knows importance of sea ice
+
+{{< /speaker_note >}}
+
 </section>
+
 
 ---
 
 <section data-background-image="./img/sea-ice-types.png" data-background-opacity=1.0 data-background-size=80%>
+
+{{< speaker_note >}}
+
+- key way we distinguish sea ice types is by age/thickness
+- very new ice has structurual differences
+  - such as sharp needles in Frazil ice etc.
+- but in this study we focus on YI, FYI and MYI
+- which differ in their salinity, thickness and roughness
+
+{{< /speaker_note >}}
 
 
 ---
@@ -104,40 +130,98 @@ Image sources:
 - <span style="font-size: small;">https://johnenglander.net/wp/wp-content/uploads/2018/05/young-sea-ice.jpeg
 - <span style="font-size: small;">[WMO Sea Ice Nomenclature WMO-No. 259](https://library.wmo.int/records/item/41953-wmo-sea-ice-nomenclature)
 
+{{< speaker_note >}}
+
+- references can be found in a vertical slide
+
+{{< /speaker_note >}}
+
 
 </section>
 
 ---
 
+{{< fragment >}}
 **Young Ice (YI)**
 - Newly formed ice
 - can be rough or smooth
 - less than 30cm thick
+{{< /fragment >}}
 
+{{< fragment >}}
 **First-year Ice (FYI)**
 - Ice that has survived one summer melt season
 - can be level, rough or have ridges
 - 30cm to 2m thick
+{{< /fragment >}}
 
+{{< fragment >}}
 **Multi-year Ice (MYI)**
 - Ice that has survived more than one summer melt season
 - typically smoother than FYI
 - Over 2.5m thick and hence protrudes above the waterline
 - has extremely low salinity compared to YI and FYI 
+{{< /fragment >}}
+
+{{< speaker_note >}}
+
+**Add a slide after this showing what these 3 types of ice look like in the dataset we will be using**
+
+- thickness of YI, FYI and MYI
+- feezing ice rejects salt but it gets trapped in the crystals and slowly precipitates out over time
+- this is why older ice has lower salinity
+
+{{< /speaker_note >}} 
 
 ---
 
+<section>
+
 ## Remote Sensing of Sea Ice
 
-- Active sensors
-  - Radar altimeters (CrysoSat-2)
-  - Laser altimeters (IceSat-2)
-  - Scatterometers (Metop A/B/C - ASCAT)
-  - Synthetic Aperture Radar (Radarsat-2)
-- Passive sensors
-  - Passive microwave radiometers (SMOS)
-- Hybrid sensors
-  - Global Navigation Satellite System Reflectometry - GNSS-R
+{{< fragment >}}
+Active sensors
+- Radar altimeters (CrysoSat-2)
+- Laser altimeters (IceSat-2)
+- Scatterometers (Metop A/B/C - ASCAT)
+- Synthetic Aperture Radar (Radarsat-2)
+{{< /fragment >}}
+  
+{{< fragment >}}
+Passive sensors
+- Passive microwave radiometers (SMOS)
+{{< /fragment >}}
+
+{{< fragment >}}
+Hybrid sensors
+- Global Navigation Satellite System Reflectometry - GNSS-R
+{{< /fragment >}}
+
+{{< speaker_note >}}
+
+- Active is when we create our own signal 
+- requires a lot of power and hence cost of construction and operation is high
+- Passive in contrast picks up Earth's natural emissions
+- Various frequencies of light will pick up difference properties of the surface emitting or reflecting the radiation
+- I've listed key active and passive missions that are used to monitor sea ice over Antarctica
+- GNSS-R is a hybrid sensor that uses the reflected signals from GNSS (GPS) satellites that is constantly bombarding the earth's surface,
+- typically using cubesats that are low cost and cheap to run
+- so it has the advantages of both active and passive sensors
+- and more importantly for us, it is a completely independent data source
+
+{{< /speaker_note >}}
+
+---
+
+IUP U. Bremen Multiage Ice Concentration
+<img src="./img/U Brem. IUP multiage ice 2020-03-01.png" height=280px>
+
+GNSS-R
+
+<img src="./img/gnssr excess phase noise animation.gif" width=300px>
+<img src="./img/gnssr phase noise animation.gif" width=300px>
+
+</section>
 
 ---
 
@@ -149,6 +233,21 @@ Image sources:
   <img src="./img/GNSS-R - signal to features schematic.png" style="max-width: 100%;">
 </div>
 
+{{< speaker_note >}}
+
+- Ok here's how it works: there is a direct and reflected signal
+- we aggregate the intensity of each signal into time delay (phase space) and doppler shift (frequency space) bins giving us these DDMs
+- from these DDMs we get the various variables that we will use as features to classify the ice types
+  - power: integrating over the DDM space we get the power
+  - reflectivity: ratio of the reflected to the incident power
+  - snr: subtract out the noise floor where we don't see a signal and divide it by the noise floor
+  - phase noise: standard deviation of the phase of the signal
+  - excess phase noise: std dev of the phase after removing the coherence SNR component of the signal, leaving only the component of phase noise due to the surface roughness
+- These variables were hand picked by Spire's domain experts (Jessica Cartwright) after lots of internal testing and this was the data that was given to us
+- Note that 
+
+{{< /speaker_note >}}
+
 </section>
 
 ---
@@ -159,18 +258,22 @@ Image sources:
 
 ## IUP Multiyear ice concentration and other sea ice types, Version AQ2 (Antarctic)
 
+{{< fragment >}}
 - Provides YI, FYI and MYI concentrations
 - Developed by Institute of Environmental Physics, University of Bremen
 - Uses passive microwave (AMSR2) and scatterometer (ASCAT instruments on Metop A/B/C) data to derive initial estimates
 - Corrects the initial estimates using 2m surface air temperature and sea ice drift data
 - 12.5km x 12.5km grid resolution
 <p class="citation"> Melsheimer, Christian; Spreen, Gunnar; Ye, Yufang; Shokr, Mohammed (2019): Multiyear Ice Concentration, Antarctic, 12.5 km grid, cold seasons 2013-2018 (from satellite). PANGAEA, https://doi.org/10.1594/PANGAEA.909054
+{{< /fragment >}}
 
 </div>
 
 <div class="col1">
 
+{{< fragment >}}
 <img src="./img/Original U.Brem non zero ice concentration distribution.png">
+{{< /fragment >}}
 
 </div>
 
@@ -312,18 +415,24 @@ $$
 
 Two ways to get $P(model\ pred\ |\ true\ label)$:
 
+{{< fragment >}}
 - Using a tabular ML model - model calibration required
   - calibrate using test dataset and Bayes rule again
+{{< /fragment >}}
 
 <div style="font-size:0.4em">  
+{{< fragment >}}
 $$
 P(pred\ |\ true) = \frac{P(true\ |\ pred)P(pred)}{\sum_{pred\ labels}{P(true\ |\ pred)P(pred)}}
 $$
+{{< /fragment >}}
 </div>  
 
+{{< fragment >}}
 - Using Robust Mixture Discriminent Analysis (RMDA)
 
 <p class="citation"> Bouveyron, C., & Girard, S. (2009). Robust supervised classification with mixture models: Learning from data with uncertain labels. Pattern Recognition, 42(11), 2649–2658. https://doi.org/10.1016/j.patcog.2009.03.027
+{{< /fragment >}}
 
 </section>
 
@@ -353,9 +462,12 @@ $$
 
 ## Decision tree ensemble methods
 
-- **Random Forest**: Fits an ensemble of N trees on random subsets (known as bagging) of data and predicts with a majority vote. 
-- **Adaptive Gradient Boosting**: Trains N trees sequentially, each tree correcting the errors of the previous tree by weighting the data points that were misclassified. This is known as boosting.
-- **Gradient Boosting**: Also a boosting method in that it trains N trees sequentially, however, instead of weighting the data points, it fits each tree to the residuals of the previous tree.
+{{< fragment >}}
+- **Random Forest**: Fits an ensemble of N trees on random subsets (known as bagging) of data and predicts with a majority vote. {{< /fragment >}}
+
+{{< fragment >}}- **Adaptive Gradient Boosting**: Trains N trees sequentially, each tree correcting the errors of the previous tree by weighting the data points that were misclassified. This is known as boosting. {{< /fragment >}}
+
+{{< fragment >}}- **Gradient Boosting**: Also a boosting method in that it trains N trees sequentially, however, instead of weighting the data points, it fits each tree to the residuals of the previous tree. {{< /fragment >}}
 
 ---
 
@@ -363,10 +475,13 @@ $$
 
 Key improvements over vanilla gradient boosting:
 
-- **Histogram-based splitting**: LightGBM bins the data points into discrete bins and then splits the bins instead of the data points. This reduces the complexity of the model and speeds up training.
-- **Leaf-wise growth**: Instead of growing the tree level-wise, LightGBM grows the tree leaf-wise. This reduces the number of nodes in the tree and hence the complexity of the model. 
-- **Gradient-based One-Side Sampling**: LightGBM samples the data points based on the gradient of the loss function. This speeds up training by focusing on the data points that are more informative.
-- **Exclusive Feature Bundling**: LightGBM bundles exclusive features together to reduce the number of features that need to be considered during training.
+{{< fragment >}}- **Histogram-based splitting**: LightGBM bins the data points into discrete bins and then splits the bins instead of the data points. This reduces the complexity of the model and speeds up training. {{< /fragment >}}
+
+{{< fragment >}}- **Leaf-wise growth**: Instead of growing the tree level-wise, LightGBM grows the tree leaf-wise. This reduces the number of nodes in the tree and hence the complexity of the model. {{< /fragment >}}
+
+{{< fragment >}}- **Gradient-based One-Side Sampling**: LightGBM samples the data points based on the gradient of the loss function. This speeds up training by focusing on the data points that are more informative. {{< /fragment >}}
+
+{{< fragment >}}- **Exclusive Feature Bundling**: LightGBM bundles exclusive features together to reduce the number of features that need to be considered during training. {{< /fragment >}}
 
 
 </section>
@@ -434,33 +549,46 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 
 <div class="multi-column">
 
+
 <div class="col1">
 
+{{< fragment >}}
 - Training score: 83.7%
 - Validation score: 81.3%
+{{< /fragment >}}
 
 </div>
 
 <div class="col1" style="font-size:0.4em">
 
+{{< fragment >}}
 |            | YI   | FYI   | MYI  | water |
 |------------|------------|------------|------------|------------|
 | **YI**    | 0.59237875 | 0.27944573 | 0.0369515  | 0.09122402 |
 | **FYI**   | 0.02884615 | 0.94346154 | 0.01884615 | 0.00884615 |
 | **MYI**   | 0.08886389 | 0.64904387 | 0.22497188 | 0.03712036 |
 | **water** | 0.02849003 | 0.01745014 | 0.00747863 | 0.9465812  |
-</div>
+{{< /fragment >}}
 
 </div>
 
+
+</div>
+
+{{< fragment >}}
 - The entire dataset contains 7.39M rows. 
 - After filtering rows where we have high confidence in labels (YI>90%, FYI>99.9%, MYI>99.%,Water=100%), we are left with:
 	- YI: 9801 rows
 	- FYI: 28266 rows
 	- MYI: 9805 rows
 	- Water: 3.18M rows
+{{< /fragment >}}
+
+{{< fragment >}}
+<p style="font-size=0.6em"> 
 
 **Solution**: SMOTE based class rebalancing
+{{< /fragment >}}
 
 ---
 
@@ -470,7 +598,6 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
   1. Identify the minority class
   2. Find its nearest neighbours
   3. Generate synthetic samples by interpolating between the minority class and its neighbours
-
 - After SMOTE each class contains 3.18M rows
 - So we randomly undersampled and treated the number of samples in each class as a hyperparameter
 - More sophisticated undersampling techniques (Tomek, Edited Nearest Neighbours) did note prune the dataset enough
@@ -510,16 +637,32 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 
 ---
 
+<section>
+
 ## UMAP (Uniform Manifold Approximation and Projection)
 
+{{< fragment >}}
 - UMAP is a non-linear dimensionality reduction technique that is particularly well-suited for visualizing complex data in a low-dimensional space
 - UMAP assumes that high-dimensional data lies on a low-dimensional manifold embedded in the higher-dimensional space
+{{< /fragment >}}
+
+{{< fragment >}}
 - UMAP first constructs a weighted k-nearest neighbor graph from the high-dimensional data
 - UMAP then defines a low-dimensional representation and uses stochastic gradient descent to optimize the layout of the low-dimensional points, preserving the structure of the high-dimensional graph as closely as possible
+{{< /fragment >}}
+
+{{< fragment >}}
 - It thus preserves both local and global structure of the data
 - Supervised mode:
   - During knn graph construction, UMAP uses the labels to weight the edges in the graph so that points with the same label are closer in the low-dimensional space
   - Also adds a loss term to the optimization function that penalizes points with the same label being far apart in the low-dimensional space
+{{< /fragment >}}
+
+---
+
+<img src="./img/umap transformation.png">
+
+</section>
 
 --- 
 
@@ -534,8 +677,11 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 | Validation accuracy         | 99.84%     |
 | Test accuracy               | 93.34%     |
 
+</div>
 
 **Test Confusion matrix**
+
+<div style="font-size:0.4em">
 
 |              | YI     | FYI   | MYI    | water  |
 |--------------|-------------|-------------|-------------|-------------|
@@ -560,9 +706,9 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 
 <div class="col2">
 
-<img src="./img/Original U.Brem sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;">
-<img src="./img/UMAP-LGBM updated sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;">
-<img src="./img/UMAP-RMDA updated sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;">
+{{< fragment >}}<img src="./img/Original U.Brem sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;"> {{< /fragment >}}
+{{< fragment >}}<img src="./img/UMAP-LGBM updated sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;"> {{< /fragment >}}
+{{< fragment >}}<img src="./img/UMAP-RMDA updated sure ice class geographic distribution - winter.png" style="margin-bottom: 0px; margin-top: 0px;"> {{< /fragment >}}
 
 </div>
 
@@ -576,15 +722,15 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 
 ---
 
-### Updated geo distribution - summer
+### Updated geographic distribution - summer
 
 <div class="multi-column">
 
 <div class="col2">
 
-<img src="./img/Original U.Brem sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;">
-<img src="./img/UMAP-LGBM updated sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;">
-<img src="./img/UMAP-RMDA updated sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;">
+{{< fragment >}}<img src="./img/Original U.Brem sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;"> {{< /fragment >}}
+{{< fragment >}}<img src="./img/UMAP-LGBM updated sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;"> {{< /fragment >}}
+{{< fragment >}}<img src="./img/UMAP-RMDA updated sure ice class geographic distribution - summer.png" style="margin-bottom: 0px; margin-top: 0px;"> {{< /fragment >}}
 
 </div>
 
@@ -595,6 +741,15 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 </div>
 
 </div>
+
+---
+
+- GNSS-R is an exciting new data source for monitoring sea ice at very high resolution
+- We have shown how it can be used to update and improve existing ice concentration datasets
+- we pick up many more locations previously missed
+- this was only one year of data, the accuracy wii improve with more data
+
+More validation required! We are open to ideas
 
 ---
 
