@@ -101,7 +101,7 @@ Key points:
 
 ---
 
-<section data-background-image="./img/sea-ice-types.png" data-background-opacity=1.0 data-background-size=80%>
+<section data-background-image="./img/sea-ice-types.png" data-background-opacity=1.0 data-background-size=75%>
 
 {{< speaker_note >}}
 
