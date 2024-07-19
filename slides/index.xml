@@ -171,11 +171,12 @@ window.onload = add_vert_banner();
 &lt;li>reflectivity: ratio of the reflected to the incident power&lt;/li>
 &lt;li>snr: subtract out the noise floor where we don&amp;rsquo;t see a signal and divide it by the noise floor&lt;/li>
 &lt;li>phase noise: standard deviation of the phase of the signal&lt;/li>
-&lt;li>excess phase noise: std dev of the phase after removing the coherence SNR component of the signal, leaving only the component of phase noise due to the surface roughness&lt;/li>
+&lt;li>excess phase noise: std dev of the phase after removing the coherent SNR component of the signal, leaving only the component of phase noise due to the surface roughness&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>These variables were hand picked by Spire&amp;rsquo;s domain experts (Jessica Cartwright) after lots of internal testing and this was the data that was given to us&lt;/li>
-&lt;li>Note that&lt;/li>
+&lt;li>Note that the reason we focus on these variables instead of using the entire DDMs is because the dataset is already over 10Gb with only 14 numbers per observation, let alone a whole image per observation.&lt;/li>
+&lt;li>There are a lot of samples, the raw data was in TB.&lt;/li>
 &lt;/ul>
 &lt;/aside>
 &lt;/section>
@@ -516,7 +517,7 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 &lt;/li>
 &lt;li>After SMOTE each class contains 3.18M rows&lt;/li>
 &lt;li>So we randomly undersampled and treated the number of samples in each class as a hyperparameter&lt;/li>
-&lt;li>More sophisticated undersampling techniques (Tomek, Edited Nearest Neighbours) did note prune the dataset enough&lt;/li>
+&lt;li>More sophisticated undersampling techniques (Tomek, Edited Nearest Neighbours) did not prune the dataset enough&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="performance-after-class-rebalancing">Performance after class rebalancing&lt;/h2>
@@ -547,7 +548,9 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;/div>
 &lt;p>&lt;strong>Test Confusion matrix&lt;/strong>&lt;/p>
+&lt;div style="font-size:0.4em">
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -740,9 +743,9 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 &lt;section data-background-image="https://images.unsplash.com/photo-1493329087152-853abc04b84b?q=80&amp;w=3876&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.3>
 &lt;ul>
 &lt;li>GNSS-R is an exciting new data source for monitoring sea ice at very high resolution&lt;/li>
-&lt;li>We have shown how it can be used to update and improve existing ice concentration datasets&lt;/li>
-&lt;li>we pick up many more locations previously missed&lt;/li>
-&lt;li>this was only one year of data, the accuracy wii improve with more data&lt;/li>
+&lt;li>we fitted models to predict ice types and used these models to update existing ice concentration datasets&lt;/li>
+&lt;li>we pick up many more locations previously missed thus improving existing ice concentration datasets&lt;/li>
+&lt;li>this was only one year of data, the accuracy will improve with more data&lt;/li>
 &lt;/ul>
 &lt;p>More validation required! We are open to ideas&lt;/p>
 &lt;/section>
