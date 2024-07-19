@@ -27,9 +27,9 @@ bio:
 # Interests to show in About widget
 interests:
   - Probabilistic machine learning and generative artificial intelligence 
-  - Spatiotemporal modeling and timeseries forecasting in climate, remote sensing, renewable energy, economics and finance
+  - Spatiotemporal modeling and timeseries forecasting in climate, remote sensing, energy, economics and finance
   - Reinforcement learning for optimization of complex systems
-  - Techniques that combine AI, statistical modeling and physics
+  - Techniques that combine AI, statistical modelling and physics
   - Bayesian modelling with stochastic variational inference
 
 # Education to show in About widget

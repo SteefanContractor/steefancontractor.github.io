@@ -242,9 +242,10 @@ GNSS-R
   - reflectivity: ratio of the reflected to the incident power
   - snr: subtract out the noise floor where we don't see a signal and divide it by the noise floor
   - phase noise: standard deviation of the phase of the signal
-  - excess phase noise: std dev of the phase after removing the coherence SNR component of the signal, leaving only the component of phase noise due to the surface roughness
+  - excess phase noise: std dev of the phase after removing the coherent SNR component of the signal, leaving only the component of phase noise due to the surface roughness
 - These variables were hand picked by Spire's domain experts (Jessica Cartwright) after lots of internal testing and this was the data that was given to us
-- Note that 
+- Note that the reason we focus on these variables instead of using the entire DDMs is because the dataset is already over 10Gb with only 14 numbers per observation, let alone a whole image per observation. 
+- There are a lot of samples, the raw data was in TB. 
 
 {{< /speaker_note >}}
 
@@ -600,7 +601,7 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
   3. Generate synthetic samples by interpolating between the minority class and its neighbours
 - After SMOTE each class contains 3.18M rows
 - So we randomly undersampled and treated the number of samples in each class as a hyperparameter
-- More sophisticated undersampling techniques (Tomek, Edited Nearest Neighbours) did note prune the dataset enough
+- More sophisticated undersampling techniques (Tomek, Edited Nearest Neighbours) did not prune the dataset enough
 
 ---
 
@@ -615,8 +616,11 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 | Validation accuracy         | 99.12%     |
 | Test accuracy               | 96.34%     |
 
+</div>
 
 **Test Confusion matrix**
+
+<div style="font-size:0.4em">
 
 |              | YI     | FYI    | MYI    | water  |
 |--------------|-------------|-------------|-------------|-------------|
@@ -747,9 +751,9 @@ subject to $\sum_{i=1}^{L} r_{ij}=1, \forall j=1,...,K$.
 <section data-background-image="https://images.unsplash.com/photo-1493329087152-853abc04b84b?q=80&w=3876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.3>
 
 - GNSS-R is an exciting new data source for monitoring sea ice at very high resolution
-- We have shown how it can be used to update and improve existing ice concentration datasets
-- we pick up many more locations previously missed
-- this was only one year of data, the accuracy wii improve with more data
+- we fitted models to predict ice types and used these models to update existing ice concentration datasets
+- we pick up many more locations previously missed thus improving existing ice concentration datasets 
+- this was only one year of data, the accuracy will improve with more data
 
 More validation required! We are open to ideas
 
