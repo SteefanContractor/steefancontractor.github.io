@@ -1,12 +1,12 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
+# Documentation: https://docs.hugoblox.com/managing-content/
 
-title: "Improving Antarctic Sea Ice Detection with CubeSat GNSS-R"
-summary: "A novel application of passive GPS signals (GNSS-R) picked up by cube satellites to detect the location and age of Antarctic sea ice. A simple Bayes rule based update strategy has been implemented to improve estimates of various sea ice types using both a gradient boosting machine learning model and a robust mixture discriminent analysis statistical model as the likelihood."
-authors: [Steefan Contractor, Shane Keating, Jessica Cartwright, Alex ]
-tags: [machine learning, deep learning, tabular data, remote sensing, classification, statistical modelling]
-categories: [artificial intelligence]
-date: 2024-07-24T09:00:00+10:00
+title: "Education and Outreach"
+summary: "I am the lead academic on two key UNSW data science education and outreach initiatives. 1. The UNSW Data Science Hub Year 10 Work Experience Week, and 2. UNSW SciX Data Science Project. The work experience week is an intense five day annual workshop for year 10 students where they learn what it is like to be a data scientist. The SciX Data Science Project is a two week workshop and support program for year 12 students where they complete a science research project with a data science flavor over the course of a year as part of the HSC science extension curriculum."
+authors: []
+tags: []
+categories: []
+date: 2024-07-23T14:32:26+10:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

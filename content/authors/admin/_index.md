@@ -31,6 +31,7 @@ interests:
   - Reinforcement learning for optimization of complex systems
   - Techniques that combine AI, statistical modelling and physics
   - Bayesian modelling with stochastic variational inference
+  - Quantum machine learning
 
 # Education to show in About widget
 education:
@@ -85,7 +86,7 @@ email: 'stefan.contractor@gmail.com'
 highlight_name: true
 ---
 
-I am a research data scientist with a doctorate in climate science and nearly five years of post-doctorate experience as a trans-disciplinary statistical and deep learning consultant at the University of New South Wales (UNSW). 
+I am a research data scientist with an honours in experimental quantum computing, a doctorate in climate science and nearly five years of post-doctorate experience as a trans-disciplinary statistical and deep learning research consultant at the University of New South Wales (UNSW). 
 
 <!-- I have experience with statistical modeling, computer vision, and AI applications in the fields of climate science and remote sensing, and also natural language processing of large texts in law  and politics. I also like to make complex concepts simple by creating interactive dashboards. Refer to my list of featured projects for more details.  -->
 
