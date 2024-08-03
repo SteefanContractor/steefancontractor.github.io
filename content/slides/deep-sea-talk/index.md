@@ -46,6 +46,7 @@ slides:
   
   <img src="./img/UNSW_logo-portrait-light_transparent.png">
   <img src="./img/Udash logo CMYK revised-03.png">
+  <img src="https://antarctic.org.au/wp-content/uploads/2021/10/ACEAS-Logo-Concept-1-WHT.png" style="height:10vh">
 
 </div>
 
