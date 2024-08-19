@@ -300,7 +300,7 @@ GNSS-R
 
 ---
 <section>
-<iframe src="https://steefancontractor.github.io/plotly_plots/First%20three%20principal%20components%20of%20features%20coloured%20by%20water-ice%20label.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://steefancontractor.github.io/plotly_plots/spacebridge/First%20three%20principal%20components%20of%20features%20coloured%20by%20water-ice%20label.html" width="100%" height="600px" style="border:none;"></iframe>
 
 ---
 
@@ -322,7 +322,7 @@ GNSS-R
 
 <section>
 
-<embed src="https://steefancontractor.github.io/plotly_plots/First%20three%20principal%20components%20of%20features%20coloured%20by%20ice%20type%20labels.html" width="100%" height="600px" style="border:none;"></iframe>
+<embed src="https://steefancontractor.github.io/plotly_plots/spacebridge/First%20three%20principal%20components%20of%20features%20coloured%20by%20ice%20type%20labels.html" width="100%" height="600px" style="border:none;"></iframe>
 
 ---
 
