@@ -119,7 +119,7 @@ You are responsible for the safety of you and others around you - Take care!
 
 <section data-background-image="https://images.unsplash.com/photo-1583947582886-f40ec95dd752?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity=0.4>
 
-# COVID safety
+# Cold & Flu safety
 
 - You are welcome to use face masks and are even encouraged to use them
 - Sanitise/wash hands regularly
@@ -129,7 +129,7 @@ You are responsible for the safety of you and others around you - Take care!
 
 ---
 
-<section data-background-image="./mathewsf23_emergency.jpg" data-background-position="right" data-background-size="contain">
+<section data-background-image="./evacuation diagram d26.jpeg" data-background-position="right" data-background-size="contain">
 
 # Emergency Procedure
 
@@ -149,13 +149,22 @@ Security Services
             <i class="fas fa-solid fa-home"></i>
 </a>
 
+---
+
+# Emergency Evacuation
+
+- BEEP BEEP: prepare to evacuate. Do not leave until WHOOP WHOOP alarm
+- WHOOP WHOOP: evacuate immediately. Follow staff and building warden instructions
+- Assemble infront of John Clancy auditorium
+
+
 </section>
 
 ---
 
 # First Aid - Physical
 
-- Location of first aid kit
+- Location of first aid kit and first aid room (Rm G003, E26)
 - Location of Automatic External Defibrillator
 - Any incident requiring the use of first aid, however minor, must be reported online to UNSW 
 
@@ -167,17 +176,17 @@ Security Services
 
 [UNSW First Responders](https://www.unsw.edu.au/planning-assurance/safety/safer-communities/gendered-violence/find-first-responders) are students and staff who are trained to offer you confidential support. They understand that reporting gendered violence can be difficult and can provide you with guidance and support.
 
-Michelle Cartwright, uDASH centre manager <a href="mailto:uDASH@unsw.edu.au" aria-label="envelope">
+Scott Sisson, uDASH director <a href="mailto:uDASH@unsw.edu.au" aria-label="envelope">
             <i class="fas fa-envelope big-icon"></i> 
 </a>
 
-Michelle is also [ally@UNSW](https://www.edi.unsw.edu.au/get-involved/ally-network). The ally@UNSWnetwork aims to ensure UNSW is a safe and welcoming place for all LGBTIQ+ students and staff.
+You can also contact a certified [ally@UNSW](https://www.edi.unsw.edu.au/get-involved/ally-network) in the School of Maths and Stats, Faculty of Science. The ally@UNSWnetwork aims to ensure UNSW is a safe and welcoming place for all LGBTIQ+ students and staff.
 
 </section>
 
 ---
 
-<iframe width="800" height="480" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"src="https://use.mazemap.com/embed.html#v=1&config=unsw&zlevel=8&center=151.234564,-33.917832&zoom=18&campusid=111&sharepoitype=poi&sharepoi=295318&utm_medium=iframe" style={{ border: '1px solid grey' }} allow="geolocation"></iframe><br/><small><a href="https://www.mazemap.com/">Map by MazeMap</a></small>
+<iframe width="800" height="600" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"src="https://use.mazemap.com/embed.html#v=1&config=unsw&campusid=111&zlevel=7&center=151.235024,-33.917283&zoom=18&sharepoitype=poi&sharepoi=1001050575&utm_medium=iframe" style={{ border: '1px solid grey' }} allow="geolocation"></iframe><br/><small><a href="https://www.mazemap.com/">Map by MazeMap</a></small>
 
 ---
 
@@ -236,7 +245,7 @@ Our expertise:
 
 # Morning sessions 9:30am - 12:00pm
 
-- Lecture style sessions 10:00am - 12:00pm
+- Interactive lecture style sessions 10:00am - 12:00pm
 - Special talks 9:30 - 10:00am
 
 ---
@@ -249,7 +258,6 @@ Our expertise:
 - Optional but recommended fun activities
 
   - School of Mathematics and Statistics outreach workshops (45min)
-  - School of Computer Science VR lab tour (45min)
   - Datasoc campus tour (30min)
 
 ---
@@ -284,7 +292,7 @@ Afternoon session:
 
 Morning session:
 - Meet a data scientist
-  - Laura McKemmish, School of Chemistry 
+  - Nick Lillywhite, [BioScout](https://www.bioscout.com.au)
 - Exploratory data analysis 
 
 Afternoon session:
@@ -352,37 +360,49 @@ Afternoon session:
 <div class="col1">
 
 Dr. Steefan Contractor
-<img src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250" height=200px>
+<img src="https://s.gravatar.com/avatar/f5f75fa059f22f822b95edc56c68930873203f6816d9d0864a75d82b2453e52f?s=250" height=180px>
 
-Dr. Boris Beranger
-<img src="https://research.unsw.edu.au/sites/default/files/styles/profile/public/images/profile/ID_picture.jpg?itok=dEOUHrcH" height=200px>
+Dr. Ziyang Lyu
+<img src="https://research.unsw.edu.au/sites/default/files/styles/profile/public/images/profile/IMG_2294.JPG?itok=L2ykujSb" height=180px>
+
 </div>
 
 <div class="col1">
 
-Dr. Elma Akand
-<img src="Elma_Akand_headshot.png" height=200px>
+Dr. José Ferrer
+<img src="https://api.research.unsw.edu.au/sites/default/files/images/profile/JR_Ferrer_Paris.jpg" height=180px>
 
-Dr. Ryan Thompson
-<img src="https://ryan-thompson.github.io/resources/photo.jpg" height=200px>
+Dr. Maeve McGillycuddy
+<img src="https://www.unsw.edu.au/content/dam/images/science/math-stats/news/2022-01-science/2022-04-maeve-McGillycuddy-001.jpeg" height=180px>
+
 </div>
 
 <div class="col1">
 
-Jose R. Ferrer
-<img src="https://api.research.unsw.edu.au/sites/default/files/images/profile/JR_Ferrer_Paris.jpg" height=200px>
+Dr. Sean Gardiner
+<img src="https://api.research.unsw.edu.au/sites/default/files/images/profile/Sean_Gardiner_photo2_cropped.png" height=180px>
 
 Dr. Peng Zhong
-<img src="https://pangchung.github.io/images/profile.jpg" height=200px>
+<img src="https://pangchung.github.io/images/profile.jpg" height=180px>
 </div>
 
 <div class="col1">
-Dr. Ziyang Lyu
 
-<img src="https://research.unsw.edu.au/sites/default/files/styles/profile/public/images/profile/IMG_2294.JPG?itok=L2ykujSb" height=200px>
+Dr. Boris Beranger
+<img src="https://research.unsw.edu.au/sites/default/files/styles/profile/public/images/profile/ID_picture.jpg?itok=dEOUHrcH" height=180px>
 
-Dr. Daniel Hewitt
-<img src="https://www.unsw.edu.au/content/dam/images/photos/people/headshots/science/2023-01-hdr-student-profiles/2022-12_Daniel%20Hewitt.jpg" height=200px>
+Dr. Prosha Rahman
+<img src="https://acems.org.au/sites/default/files/styles/profile/public/images/profiles/73229086_2410000075794867_8865843119296348160_n.jpg?itok=Fcgq48tQ" height=180px>
+
+<!-- Dr. Daniel Hewitt
+<img src="https://www.unsw.edu.au/content/dam/images/photos/people/headshots/science/2023-01-hdr-student-profiles/2022-12_Daniel%20Hewitt.jpg" height=200px> -->
+</div>
+
+<div class="col1">
+
+Dr. Anikó Tóth
+<img src="https://api.research.unsw.edu.au/sites/default/files/images/profile/10548779_2720616785933_941271344440781445_o.jpg" height=180px>
+
 </div>
 
 </div>
@@ -419,11 +439,14 @@ I go on a hike, and everytime I spot a cockatoo, I note down the temperature and
 
 # What is data science?
 
-[Survey](https://www.menti.com/alsx726rihzo)
+<!-- [Survey](https://www.menti.com/alsx726rihzo) -->
+[Survey](https://www.menti.com/alpf4g89qdb2)
 
 ---
 
-<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/al897dcp2ng8s9vxfy74xuo7vjysb26s/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+<!-- <div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/al897dcp2ng8s9vxfy74xuo7vjysb26s/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div> -->
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/alepuy44anib628ejnv6poik6k8waivk/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
 
 ---
 
