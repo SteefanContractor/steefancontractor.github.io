@@ -52,13 +52,17 @@ The local override in `layouts/partials/blocks/about.biography.html` only preser
 
 This repo uses page bundles for most content types, so prefer creating content as `index.md` inside its own folder.
 
-Local archetypes are included for `project`, `post`, `publication`, and `event`, so `hugo new` will generate a starter file with the front matter this site expects.
+Local archetypes are included for `project`, `post`, `publication`, `event`, and `slides`, so `hugo new` will generate a starter file with the front matter this site expects.
 
 ### New project
 
 ```bash
 hugo new project/my-new-project/index.md
 ```
+
+This will use `archetypes/project.md`.
+
+Use this for a project page that should live under `content/project/` and, by default, be eligible for the homepage portfolio section.
 
 Then edit:
 - `content/project/my-new-project/index.md`
@@ -74,6 +78,8 @@ hugo new post/my-new-post/index.md
 
 This will use `archetypes/post.md`.
 
+Use this for a normal blog-style post under `content/post/`.
+
 ### New publication
 
 ```bash
@@ -81,6 +87,8 @@ hugo new publication/my-new-publication/index.md
 ```
 
 This will use `archetypes/publication.md`.
+
+Use this for papers, preprints, reports, or other publication records under `content/publication/`.
 
 ### New event or talk
 
@@ -90,6 +98,20 @@ hugo new event/my-new-talk/index.md
 
 This will use `archetypes/event.md`.
 
+Use this for the event or talk page metadata.
+
+### New slide deck
+
+```bash
+hugo new slides/my-new-deck/index.md
+```
+
+This will use `archetypes/slides.md`.
+
+Use this for a standalone reveal.js slide deck. Existing examples live under `content/slides/`.
+
+If you want an event page to link to the deck, set `slides: my-new-deck` in `content/event/my-new-talk/index.md`.
+
 ## Important Paths
 
 - `content/_index.md`: homepage sections
@@ -98,6 +120,7 @@ This will use `archetypes/event.md`.
 - `content/post/`: blog posts
 - `content/publication/`: publications
 - `content/event/`: talks and events
+- `content/slides/`: slide decks
 - `config/_default/hugo.yaml`: Hugo and build configuration
 - `config/_default/params.yaml`: site settings and features
 - `config/_default/menus.yaml`: top navigation
