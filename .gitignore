@@ -4,6 +4,8 @@
 # Hugo
 resources/
 public/
+dist/
+hugo_stats.json
 jsconfig.json
 node_modules/
 go.sum

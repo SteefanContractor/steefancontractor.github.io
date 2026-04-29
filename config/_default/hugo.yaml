@@ -7,6 +7,7 @@
 # Website name
 title: Steefan Contractor # Website name
 baseURL: 'https://SteefanContractor.github.io' # Website URL
+publishDir: dist
 
 ############################
 ## LANGUAGE
@@ -25,7 +26,8 @@ build:
   writeStats: true
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
+pagination:
+  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -34,7 +36,7 @@ permalinks:
   authors: '/author/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
@@ -53,3 +55,6 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+services:
+  googleAnalytics:
+    id: ''
