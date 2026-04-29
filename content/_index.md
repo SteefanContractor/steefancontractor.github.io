@@ -12,22 +12,10 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Projects
+      title: Selected Projects
       filters:
         folders:
           - project
-      default_button_index: 0
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Deep Learning
-          tag: deep learning
-        - name: Natural Language Processing
-          tag: natural language processing
-        - name: Computer Vision
-          tag: computer vision
-        - name: Data Visualization
-          tag: data visualization
     design:
       columns: '2'
       view: showcase
