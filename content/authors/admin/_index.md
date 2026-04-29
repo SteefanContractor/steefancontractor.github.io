@@ -14,10 +14,14 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Post-doctoral Research Associate (Research Data Scientist)
+role: >-
+  ML/AI Lead at CounterCurrent<br>
+  Research Associate at UNSW
 
 # Organizations/Affiliations to show in About widget
 organizations:
+  - name: CounterCurrent
+    url: https://countercurrent.ai/
   - name: UNSW Data Science Hub, School of Mathematics and Statistics, The Univesrsity of New South Wales
     url: https://www.unsw.edu.au/research/udash
 
@@ -86,9 +90,9 @@ email: 'stefan.contractor@gmail.com'
 highlight_name: true
 ---
 
-I am a research data scientist with an honours in experimental quantum computing, a doctorate in climate science and nearly five years of post-doctorate experience as a trans-disciplinary statistical and deep learning research consultant at the University of New South Wales (UNSW). 
+I am an ML/AI lead and research data scientist working on foundation models, probabilistic machine learning, and AI spatiotemporal modelling. I have an honours degree in experimental quantum computing, a doctorate in climate science, and more than six years of experience applying statistical and deep learning methods across research and industry.
 
-<!-- I have experience with statistical modeling, computer vision, and AI applications in the fields of climate science and remote sensing, and also natural language processing of large texts in law  and politics. I also like to make complex concepts simple by creating interactive dashboards. Refer to my list of featured projects for more details.  -->
+I currently work across CounterCurrent and UNSW, building AI systems for ocean forecasting and maritime decision support while leading technical strategy, product development, and applied research.
 
-In my spare time I like to ride bicycles, climb rocks and ferment food and drinks. 
+In my spare time I like to ride bicycles, climb rocks and ferment food and drinks.
 {style="text-align: justify;"}
